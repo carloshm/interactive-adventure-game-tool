@@ -25,46 +25,22 @@ module.exports = {
 	"AMAZON.CancelIntent": function ( intent, session, request, response ) {
 		processUtterance( intent, session, request, response, "exit story" )
 	},
-	"YesIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "yes" )
+	"GoJettersIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "go jetters" )
 	},
-	"PeterIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "peter" )
+	"MyNameIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "my name" )
 	},
-	"FlopsyIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "flopsy" )
+	"GoIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "go" )
 	},
-	"LettucesIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "lettuces" )
+	"TheQueenIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "the queen" )
 	},
-	"RadishesIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "radishes" )
+	"GrandmasterGlitchIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "grandmaster glitch" )
 	},
-	"CabbagesIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "cabbages" )
-	},
-	"NoIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "no" )
-	},
-	"HideIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "hide" )
-	},
-	"RunIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "run" )
-	},
-	"CryForHelpIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "cry for help" )
-	},
-	"WriggleFreeIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "wriggle free" )
-	},
-	"DoorIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "door" )
-	},
-	"GardenIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "garden" )
-	},
-	"ToolShedIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "tool shed" )
+	"GoHomeGlitchIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "go home glitch" )
 	},
 }
