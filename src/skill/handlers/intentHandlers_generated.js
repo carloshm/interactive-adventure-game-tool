@@ -28,43 +28,31 @@ module.exports = {
 	"YesIntent": function ( intent, session, request, response ) {
 		processUtterance( intent, session, request, response, "yes" )
 	},
-	"PeterIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "peter" )
-	},
-	"FlopsyIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "flopsy" )
-	},
-	"LettucesIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "lettuces" )
-	},
-	"RadishesIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "radishes" )
-	},
-	"CabbagesIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "cabbages" )
-	},
 	"NoIntent": function ( intent, session, request, response ) {
 		processUtterance( intent, session, request, response, "no" )
 	},
-	"HideIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "hide" )
+	"HelpIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "help" )
 	},
-	"RunIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "run" )
+	"AnythingElseIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "anything else" )
 	},
-	"CryForHelpIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "cry for help" )
+	"ZeroIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "zero" )
 	},
-	"WriggleFreeIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "wriggle free" )
+	"OneIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "one" )
 	},
-	"DoorIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "door" )
+	"TwoIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "two" )
 	},
-	"GardenIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "garden" )
+	"ThreeIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "three" )
 	},
-	"ToolShedIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "tool shed" )
+	"SevenIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "seven" )
+	},
+	"EightIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "eight" )
 	},
 }

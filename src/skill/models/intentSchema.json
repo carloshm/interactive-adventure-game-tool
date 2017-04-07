@@ -31,43 +31,31 @@
       "intent": "YesIntent"
     },
     {
-      "intent": "PeterIntent"
-    },
-    {
-      "intent": "FlopsyIntent"
-    },
-    {
-      "intent": "LettucesIntent"
-    },
-    {
-      "intent": "RadishesIntent"
-    },
-    {
-      "intent": "CabbagesIntent"
-    },
-    {
       "intent": "NoIntent"
     },
     {
-      "intent": "HideIntent"
+      "intent": "HelpIntent"
     },
     {
-      "intent": "RunIntent"
+      "intent": "AnythingElseIntent"
     },
     {
-      "intent": "CryForHelpIntent"
+      "intent": "ZeroIntent"
     },
     {
-      "intent": "WriggleFreeIntent"
+      "intent": "OneIntent"
     },
     {
-      "intent": "DoorIntent"
+      "intent": "TwoIntent"
     },
     {
-      "intent": "GardenIntent"
+      "intent": "ThreeIntent"
     },
     {
-      "intent": "ToolShedIntent"
+      "intent": "SevenIntent"
+    },
+    {
+      "intent": "EightIntent"
     }
   ]
 }
