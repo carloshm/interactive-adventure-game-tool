@@ -17,7 +17,7 @@ module.exports = {
 		processUtterance( intent, session, request, response, "go back" )
 	},
 	"AMAZON.HelpIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "help" )
+		processUtterance( intent, session, request, response, "this should never be invoked" )
 	},
 	"AMAZON.StopIntent": function ( intent, session, request, response ) {
 		processUtterance( intent, session, request, response, "exit story" )
@@ -54,5 +54,14 @@ module.exports = {
 	},
 	"EightIntent": function ( intent, session, request, response ) {
 		processUtterance( intent, session, request, response, "eight" )
+	},
+	"WrongAnswerIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "wrong answer" )
+	},
+	"NoIdeaIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "no idea" )
+	},
+	"TodayAndTomorrowIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "today and tomorrow" )
 	},
 }

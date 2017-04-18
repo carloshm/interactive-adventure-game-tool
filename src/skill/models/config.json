@@ -27,7 +27,7 @@
       "go back"
     ],
     "AMAZON.HelpIntent": [
-      "help"
+      "this should never be invoked"
     ],
     "AMAZON.StopIntent": [
       "exit story",

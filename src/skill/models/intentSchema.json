@@ -56,6 +56,15 @@
     },
     {
       "intent": "EightIntent"
+    },
+    {
+      "intent": "WrongAnswerIntent"
+    },
+    {
+      "intent": "NoIdeaIntent"
+    },
+    {
+      "intent": "TodayAndTomorrowIntent"
     }
   ]
 }

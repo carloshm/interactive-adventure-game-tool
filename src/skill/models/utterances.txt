@@ -13,7 +13,7 @@ RepeatOptionsIntent repeat options
 RepeatSceneIntent repeat scene
 RepeatSceneIntent repeat
 GoBackIntent go back
-AMAZON.HelpIntent help
+AMAZON.HelpIntent this should never be invoked
 AMAZON.StopIntent exit story
 AMAZON.StopIntent goodbye
 AMAZON.CancelIntent exit story
@@ -143,3 +143,19 @@ EightIntent eight eyes
 EightIntent nine eyes
 EightIntent ten eyes
 AnythingElseIntent anything else
+AnythingElseIntent anything else
+AnythingElseIntent anything else
+AnythingElseIntent anything else
+AnythingElseIntent anything else
+AnythingElseIntent anything else
+AnythingElseIntent anything else
+AnythingElseIntent anything else
+WrongAnswerIntent wrong answer
+NoIdeaIntent no idea
+NoIdeaIntent I do not know
+NoIdeaIntent help
+TodayAndTomorrowIntent today and tomorrow
+TodayAndTomorrowIntent today
+TodayAndTomorrowIntent tomorrow
+TodayAndTomorrowIntent it's today and tomorrow
+TodayAndTomorrowIntent the answer is today and tomorrow

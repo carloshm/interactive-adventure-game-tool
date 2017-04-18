@@ -131,7 +131,7 @@
     "color": "default",
     "isHidden": false,
     "isEndScene": false,
-    "defaultOption": "-1",
+    "defaultOption": "6",
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
@@ -176,7 +176,7 @@
     "color": "default",
     "isHidden": false,
     "isEndScene": false,
-    "defaultOption": "-1",
+    "defaultOption": "13",
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
@@ -273,7 +273,7 @@
     "color": "default",
     "isHidden": false,
     "isEndScene": false,
-    "defaultOption": "-1",
+    "defaultOption": "13",
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
@@ -377,7 +377,7 @@
     "color": "default",
     "isHidden": false,
     "isEndScene": false,
-    "defaultOption": "-1",
+    "defaultOption": "13",
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
@@ -481,7 +481,7 @@
     "color": "default",
     "isHidden": false,
     "isEndScene": false,
-    "defaultOption": "-1",
+    "defaultOption": "14",
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
@@ -494,17 +494,25 @@
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_ZERO_EYES_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_After_Q_2_Answer_4th_Apr.mp3\" />",
-      "prompt": ""
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_ZERO_EYES_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_After_Q_2_Answer_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_question_1_4th_Apr.mp3\" />",
+      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_1_IF_NOTHING_4th_Apr.mp3\" />"
     },
-    "options": []
+    "options": [
+      {
+        "sceneId": 14,
+        "utterances": [
+          "anything else"
+        ],
+        "type": "virtual"
+      }
+    ]
   },
   {
     "id": 8,
     "color": "default",
     "isHidden": false,
     "isEndScene": false,
-    "defaultOption": "-1",
+    "defaultOption": "14",
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
@@ -517,17 +525,25 @@
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_ONE_EYE_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_After_Q_2_Answer_4th_Apr.mp3\" />",
-      "prompt": ""
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_ONE_EYE_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_After_Q_2_Answer_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_question_1_4th_Apr.mp3\" />",
+      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_1_IF_NOTHING_4th_Apr.mp3\" />"
     },
-    "options": []
+    "options": [
+      {
+        "sceneId": 14,
+        "utterances": [
+          "anything else"
+        ],
+        "type": "virtual"
+      }
+    ]
   },
   {
     "id": 9,
     "color": "default",
     "isHidden": false,
     "isEndScene": false,
-    "defaultOption": "-1",
+    "defaultOption": "14",
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
@@ -540,17 +556,25 @@
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_TWO_EYES_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_After_Q_2_Answer_4th_Apr.mp3\" />",
-      "prompt": ""
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_TWO_EYES_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_After_Q_2_Answer_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_question_1_4th_Apr.mp3\" />",
+      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_1_IF_NOTHING_4th_Apr.mp3\" />"
     },
-    "options": []
+    "options": [
+      {
+        "sceneId": 14,
+        "utterances": [
+          "anything else"
+        ],
+        "type": "virtual"
+      }
+    ]
   },
   {
     "id": 10,
     "color": "default",
     "isHidden": false,
     "isEndScene": false,
-    "defaultOption": "-1",
+    "defaultOption": "14",
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
@@ -563,17 +587,25 @@
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_3%3A4%3A5%3A6_EYES_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_After_Q_2_Answer_4th_Apr.mp3\" />",
-      "prompt": ""
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_3%3A4%3A5%3A6_EYES_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_After_Q_2_Answer_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_question_1_4th_Apr.mp3\" />",
+      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_1_IF_NOTHING_4th_Apr.mp3\" />"
     },
-    "options": []
+    "options": [
+      {
+        "sceneId": 14,
+        "utterances": [
+          "anything else"
+        ],
+        "type": "virtual"
+      }
+    ]
   },
   {
     "id": 11,
     "color": "default",
     "isHidden": false,
     "isEndScene": false,
-    "defaultOption": "-1",
+    "defaultOption": "14",
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
@@ -586,17 +618,25 @@
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_SEVEN_EYES_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_After_Q_2_Answer_4th_Apr.mp3\" />",
-      "prompt": ""
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_SEVEN_EYES_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_After_Q_2_Answer_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_question_1_4th_Apr.mp3\" />",
+      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_1_IF_NOTHING_4th_Apr.mp3\" />"
     },
-    "options": []
+    "options": [
+      {
+        "sceneId": 14,
+        "utterances": [
+          "anything else"
+        ],
+        "type": "virtual"
+      }
+    ]
   },
   {
     "id": 12,
     "color": "default",
     "isHidden": false,
     "isEndScene": false,
-    "defaultOption": "-1",
+    "defaultOption": "14",
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
@@ -609,16 +649,102 @@
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_8%3A9%3A10_EYES_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_After_Q_2_Answer_4th_Apr.mp3\" />",
-      "prompt": ""
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_8%3A9%3A10_EYES_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_After_Q_2_Answer_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_question_1_4th_Apr.mp3\" />",
+      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_1_IF_NOTHING_4th_Apr.mp3\" />"
     },
-    "options": []
+    "options": [
+      {
+        "sceneId": 14,
+        "utterances": [
+          "anything else"
+        ],
+        "type": "virtual"
+      }
+    ]
   },
   {
     "id": 13,
     "color": "default",
     "isHidden": false,
     "isEndScene": false,
+    "defaultOption": "14",
+    "generateOptions": true,
+    "readPreviousOptions": false,
+    "card": {
+      "title": "Joke",
+      "text": "You enter a room.",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_OTHER_NUMBER_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_After_Q_2_Answer_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_question_1_4th_Apr.mp3\" />",
+      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_1_IF_NOTHING_4th_Apr.mp3\" />"
+    },
+    "options": [
+      {
+        "sceneId": 14,
+        "utterances": [
+          "anything else"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "color": "default",
+    "isHidden": false,
+    "isEndScene": false,
+    "defaultOption": "15",
+    "generateOptions": true,
+    "readPreviousOptions": false,
+    "card": {
+      "title": "Room",
+      "text": "You enter a room.",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_question_1_IF_ANY_ANSWER_4th_Apr.mp3\" /><audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_question_2_4th_Apr.mp3\" />",
+      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_Q_2_IF_NO_ANSWER_After_5Sec_4th_Apr.mp3\" />"
+    },
+    "options": [
+      {
+        "sceneId": 15,
+        "utterances": [
+          "wrong answer"
+        ]
+      },
+      {
+        "sceneId": 16,
+        "utterances": [
+          "no idea",
+          "I do not know",
+          "help"
+        ]
+      },
+      {
+        "sceneId": 17,
+        "utterances": [
+          "today and tomorrow",
+          "today",
+          "tomorrow",
+          "it's today and tomorrow",
+          "the answer is today and tomorrow"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "color": "default",
+    "isHidden": false,
+    "isEndScene": true,
     "defaultOption": "-1",
     "generateOptions": true,
     "readPreviousOptions": false,
@@ -632,7 +758,53 @@
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_OTHER_NUMBER_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_After_Q_2_Answer_4th_Apr.mp3\" />",
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_Q_2_WRONG_ANSWER_4th_Apr.mp3\" />",
+      "prompt": ""
+    },
+    "options": []
+  },
+  {
+    "id": 16,
+    "color": "default",
+    "isHidden": false,
+    "isEndScene": true,
+    "defaultOption": "-1",
+    "generateOptions": true,
+    "readPreviousOptions": false,
+    "card": {
+      "title": "Room",
+      "text": "You enter a room.",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_Q_2_IF_NO_ANSWER_FULL_TIME_4th_Apr.mp3\" />",
+      "prompt": ""
+    },
+    "options": []
+  },
+  {
+    "id": 17,
+    "color": "default",
+    "isHidden": false,
+    "isEndScene": true,
+    "defaultOption": "-1",
+    "generateOptions": true,
+    "readPreviousOptions": false,
+    "card": {
+      "title": "Room",
+      "text": "You enter a room.",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_Q_2_CORRECT_4th_Apr.mp3\" />",
       "prompt": ""
     },
     "options": []
