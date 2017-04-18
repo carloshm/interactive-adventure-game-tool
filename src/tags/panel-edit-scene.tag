@@ -162,9 +162,10 @@
                  name="$inputDefaultOption"
                  id="$inputDefaultOptionSelect"
                  onchange={ parent.save }
-                 value={ parent.scene.defaultOption }>
-          <option value="-1">(none)</option>
-          <option each={parent.scene.options} value="{sceneId}">{utterances[0]}</option>
+                 >
+          <option selected={ parent.scene.defaultOption == -1 } value="-1">(none)</option>
+{parent.scene.defaultOption}
+          <option each={parent.scene.options} selected={ parent.parent.scene.defaultOption == sceneId } value="{sceneId}">{utterances[0]}</option>
           </select>
           </div>
     </div>
@@ -446,7 +447,7 @@
       this.scene.isEndScene            = ( $advanced.$inputIsEndSceneTrue.checked )
       this.scene.readPreviousOptions = ( $advanced.$inputReadPreviousOptionsTrue.checked )
       this.scene.defaultOption = ( $advanced.$inputDefaultOptionSelect.value )
-      console.log("set detault option to",this.scene.defaultOption)
+      console.log("set default option to",this.scene.defaultOption)
 
       this.scene.voice = {
         intro: this.$intro.value.trim(),
