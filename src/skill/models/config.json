@@ -2,8 +2,8 @@
   "applicationId": null,
   "awsProfileName": "",
   "skillName": "My Alexa Skill",
-  "lambdaName": "twm-rosinasound",
-  "dynamoTableName": "twm-rosinasound",
+  "lambdaName": "irfs-gojetters-prototype",
+  "dynamoTableName": "irfs-gojetters-prototype",
   "dynamoRegion": "us-east-1",
   "commands": {
     "ResetStateIntent": [
@@ -27,7 +27,7 @@
       "go back"
     ],
     "AMAZON.HelpIntent": [
-      "this should never be invoked"
+      "help"
     ],
     "AMAZON.StopIntent": [
       "exit story",
@@ -73,10 +73,11 @@
         }
       },
       "voice": {
-        "intro": "Sorry, I didn't understand what you said. Please say again.",
+        "intro": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_UbercornDidntHear_11.mp3\"/>",
         "prompt": ""
       },
-      "isEndScene": false
+      "isEndScene": false,
+      "defaultOption": ""
     },
     "help": {
       "color": "default",

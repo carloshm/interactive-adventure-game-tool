@@ -3,95 +3,72 @@
     "id": 0,
     "color": "default",
     "isHidden": false,
-    "defaultOption": "2",
+    "defaultOption": "1",
     "isEndScene": false,
     "readPreviousOptions": false,
     "card": {
-      "title": "Welcome",
+      "title": "Go Jetters",
       "text": "",
-      "prompt": "Are you ready to begin?",
+      "prompt": "Say \"Go Jetters\"",
       "image": {
         "largeImageUrl": null,
-        "smallImageUrl": "https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/peter_rabbit/img/peter04.jpg"
+        "smallImageUrl": null
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/DAVE_pg_2_Q_1_4th_Apr.mp3\" />",
-      "prompt": ""
+      "intro": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_IntroAndTheme_1.mp3\"/>",
+      "prompt": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_UbercornDidntHear_11.mp3\"/>"
     },
     "options": [
       {
         "utterances": [
-          "yes"
+          "go jetters"
         ],
         "sceneId": 1
-      },
-      {
-        "sceneId": 2,
-        "utterances": [
-          "no"
-        ]
-      },
-      {
-        "sceneId": 3,
-        "utterances": [
-          "help"
-        ]
       }
     ]
   },
   {
     "id": 1,
-    "color": "default",
+    "color": "green",
     "isHidden": false,
-    "defaultOption": "6",
-    "isEndScene": true,
+    "defaultOption": "2",
+    "isEndScene": false,
     "readPreviousOptions": false,
     "card": {
-      "title": "Room",
+      "title": "Ubercorn's Welcome",
       "text": "",
       "prompt": "",
       "image": {
         "largeImageUrl": null,
-        "smallImageUrl": "https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/peter_rabbit/img/peter11.jpg"
+        "smallImageUrl": null
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/DAVE_pg_2_Q_1_YES_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_1_4th_Apr.mp3\" />",
-      "prompt": "repromtp"
+      "intro": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_WelcomeUbercorn_2.mp3\" />",
+      "prompt": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_UbercornDidntHear_11.mp3\"/>"
     },
     "options": [
       {
-        "sceneId": 4,
+        "sceneId": 2,
         "utterances": [
-          "yes"
-        ]
-      },
-      {
-        "sceneId": 5,
-        "utterances": [
-          "no"
-        ]
-      },
-      {
-        "sceneId": 6,
-        "utterances": [
-          "anything else"
+          "my name",
+          "{AMAZON.GB_FIRST_NAME}"
         ]
       }
     ]
   },
   {
     "id": 2,
-    "color": "default",
+    "color": "green",
     "isHidden": false,
     "isEndScene": false,
-    "defaultOption": "6",
+    "defaultOption": "3",
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
-      "title": "Room",
-      "text": "You enter a room.",
+      "title": "Souvenir Selfies Explained",
+      "text": "",
       "prompt": "",
       "image": {
         "largeImageUrl": null,
@@ -99,44 +76,67 @@
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/DAVE_pg_2_Q_1_NO_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_1_4th_Apr.mp3\" />",
-      "prompt": ""
+      "intro": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_SouvenirExplained_3.mp3\"/>",
+      "prompt": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_UbercornDidntHear_11.mp3\"/>"
     },
     "options": [
       {
-        "sceneId": 4,
+        "sceneId": 3,
         "utterances": [
-          "yes"
-        ],
-        "type": "virtual"
-      },
-      {
-        "sceneId": 5,
-        "utterances": [
-          "no"
-        ],
-        "type": "virtual"
-      },
-      {
-        "sceneId": 6,
-        "utterances": [
-          "anything else"
-        ],
-        "type": "virtual"
+          "go"
+        ]
       }
     ]
   },
   {
     "id": 3,
-    "color": "default",
+    "color": "green",
+    "isHidden": false,
+    "isEndScene": false,
+    "defaultOption": "5",
+    "generateOptions": true,
+    "readPreviousOptions": false,
+    "card": {
+      "title": "Trafalgar Square",
+      "text": "",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_GoingToTrafalgar_4.mp3\"/>",
+      "prompt": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_UbercornDidntHear_11.mp3\"/>"
+    },
+    "options": [
+      {
+        "sceneId": 4,
+        "utterances": [
+          "the queen",
+          "queen"
+        ]
+      },
+      {
+        "sceneId": 5,
+        "utterances": [
+          "grandmaster glitch",
+          "ubercorn"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "color": "green",
     "isHidden": false,
     "isEndScene": false,
     "defaultOption": "6",
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
-      "title": "Room",
-      "text": "You enter a room.",
+      "title": "Training Part 2",
+      "text": "",
       "prompt": "",
       "image": {
         "largeImageUrl": null,
@@ -144,141 +144,29 @@
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/DAVE_pg_2_Q_1_HELP_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_1_4th_Apr.mp3\" />",
-      "prompt": ""
+      "intro": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_EndWarmupBlow_6.mp3\"/>",
+      "prompt": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_UbercornDidntHear_11.mp3\"/>"
     },
     "options": [
-      {
-        "sceneId": 4,
-        "utterances": [
-          "yes"
-        ],
-        "type": "virtual"
-      },
-      {
-        "sceneId": 5,
-        "utterances": [
-          "no"
-        ],
-        "type": "virtual"
-      },
       {
         "sceneId": 6,
         "utterances": [
-          "anything else"
-        ],
-        "type": "virtual"
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "color": "default",
-    "isHidden": false,
-    "isEndScene": false,
-    "defaultOption": "13",
-    "generateOptions": true,
-    "readPreviousOptions": false,
-    "card": {
-      "title": "Room",
-      "text": "You enter a room.",
-      "prompt": "",
-      "image": {
-        "largeImageUrl": null,
-        "smallImageUrl": null
-      }
-    },
-    "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_1_YES_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_EYES_4th_Apr.mp3\" />",
-      "prompt": ""
-    },
-    "options": [
-      {
-        "sceneId": 7,
-        "utterances": [
-          "zero",
-          "none",
-          "no eyes",
-          "I have zero eyes",
-          "I have no eyes",
-          "I don't have any eyes",
-          "I haven't got any eyes"
-        ]
-      },
-      {
-        "sceneId": 8,
-        "utterances": [
-          "one",
-          "one eye",
-          "only one eye",
-          "I have one eye",
-          "I've got one eye"
-        ]
-      },
-      {
-        "sceneId": 9,
-        "utterances": [
-          "two",
-          "two eyes",
-          "I have two eyes",
-          "I've got two eyes"
-        ]
-      },
-      {
-        "sceneId": 10,
-        "utterances": [
-          "three",
-          "four",
-          "five",
-          "six",
-          "three eyes",
-          "four eyes",
-          "five eyes",
-          "six eyes",
-          "I have three eyes",
-          "I have four eyes",
-          "I have five eyes",
-          "I have six eyes"
-        ]
-      },
-      {
-        "sceneId": 11,
-        "utterances": [
-          "seven",
-          "seven eyes",
-          "I have seven eyes"
-        ]
-      },
-      {
-        "sceneId": 12,
-        "utterances": [
-          "eight",
-          "nine",
-          "ten",
-          "eight eyes",
-          "nine eyes",
-          "ten eyes"
-        ]
-      },
-      {
-        "sceneId": 13,
-        "utterances": [
-          "anything else"
+          "go"
         ]
       }
     ]
   },
   {
     "id": 5,
-    "color": "default",
+    "color": "red",
     "isHidden": false,
     "isEndScene": false,
-    "defaultOption": "13",
+    "defaultOption": "-1",
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
-      "title": "Room",
-      "text": "You enter a room.",
+      "title": "Wrong Answer",
+      "text": "",
       "prompt": "",
       "image": {
         "largeImageUrl": null,
@@ -286,103 +174,39 @@
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_1_NO_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_EYES_4th_Apr.mp3\" />",
-      "prompt": ""
+      "intro": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_KyleWrongAnswer_5.mp3\"/>",
+      "prompt": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_UbercornDidntHear_11.mp3\"/>"
     },
     "options": [
       {
-        "sceneId": 7,
+        "sceneId": 4,
         "utterances": [
-          "zero",
-          "none",
-          "no eyes",
-          "I have zero eyes",
-          "I have no eyes",
-          "I don't have any eyes",
-          "I haven't got any eyes"
+          "the queen",
+          "queen"
         ],
         "type": "virtual"
       },
       {
-        "sceneId": 8,
-        "type": "virtual",
+        "sceneId": 5,
         "utterances": [
-          "one",
-          "one eye",
-          "only one eye",
-          "I have one eye",
-          "I've got one eye"
-        ]
-      },
-      {
-        "sceneId": 9,
-        "type": "virtual",
-        "utterances": [
-          "two",
-          "two eyes",
-          "I have two eyes",
-          "I've got two eyes"
-        ]
-      },
-      {
-        "sceneId": 10,
-        "type": "virtual",
-        "utterances": [
-          "three",
-          "four",
-          "five",
-          "six",
-          "three eyes",
-          "four eyes",
-          "five eyes",
-          "six eyes",
-          "I have three eyes",
-          "I have four eyes",
-          "I have five eyes",
-          "I have six eyes"
-        ]
-      },
-      {
-        "sceneId": 11,
-        "type": "virtual",
-        "utterances": [
-          "seven",
-          "seven eyes",
-          "I have seven eyes"
-        ]
-      },
-      {
-        "sceneId": 12,
-        "type": "virtual",
-        "utterances": [
-          "eight",
-          "nine",
-          "ten",
-          "eight eyes",
-          "nine eyes",
-          "ten eyes"
-        ]
-      },
-      {
-        "sceneId": 13,
-        "type": "virtual",
-        "utterances": [
-          "anything else"
-        ]
+          "grandmaster glitch",
+          "ubercorn"
+        ],
+        "type": "virtual"
       }
     ]
   },
   {
     "id": 6,
-    "color": "default",
+    "color": "yellow",
     "isHidden": false,
     "isEndScene": false,
-    "defaultOption": "13",
+    "defaultOption": "7",
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
-      "title": "Room",
-      "text": "You enter a room.",
+      "title": "Up we go",
+      "text": "",
       "prompt": "",
       "image": {
         "largeImageUrl": null,
@@ -390,103 +214,29 @@
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_1_IF_ANYTHING_ELSE_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_EYES_4th_Apr.mp3\" />",
-      "prompt": ""
+      "intro": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_BlowActivity_7.mp3\"/>",
+      "prompt": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_UbercornDidntHear_11.mp3\"/>"
     },
     "options": [
       {
         "sceneId": 7,
         "utterances": [
-          "zero",
-          "none",
-          "no eyes",
-          "I have zero eyes",
-          "I have no eyes",
-          "I don't have any eyes",
-          "I haven't got any eyes"
-        ],
-        "type": "virtual"
-      },
-      {
-        "sceneId": 8,
-        "type": "virtual",
-        "utterances": [
-          "one",
-          "one eye",
-          "only one eye",
-          "I have one eye",
-          "I've got one eye"
-        ]
-      },
-      {
-        "sceneId": 9,
-        "type": "virtual",
-        "utterances": [
-          "two",
-          "two eyes",
-          "I have two eyes",
-          "I've got two eyes"
-        ]
-      },
-      {
-        "sceneId": 10,
-        "type": "virtual",
-        "utterances": [
-          "three",
-          "four",
-          "five",
-          "six",
-          "three eyes",
-          "four eyes",
-          "five eyes",
-          "six eyes",
-          "I have three eyes",
-          "I have four eyes",
-          "I have five eyes",
-          "I have six eyes"
-        ]
-      },
-      {
-        "sceneId": 11,
-        "type": "virtual",
-        "utterances": [
-          "seven",
-          "seven eyes",
-          "I have seven eyes"
-        ]
-      },
-      {
-        "sceneId": 12,
-        "type": "virtual",
-        "utterances": [
-          "eight",
-          "nine",
-          "ten",
-          "eight eyes",
-          "nine eyes",
-          "ten eyes"
-        ]
-      },
-      {
-        "sceneId": 13,
-        "type": "virtual",
-        "utterances": [
-          "anything else"
+          "go"
         ]
       }
     ]
   },
   {
     "id": 7,
-    "color": "default",
+    "color": "yellow",
     "isHidden": false,
     "isEndScene": false,
-    "defaultOption": "14",
+    "defaultOption": "8",
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
-      "title": "Room",
-      "text": "You enter a room.",
+      "title": "Clearing the Grimbots",
+      "text": "",
       "prompt": "",
       "image": {
         "largeImageUrl": null,
@@ -494,30 +244,31 @@
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_ZERO_EYES_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_After_Q_2_Answer_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_question_1_4th_Apr.mp3\" />",
-      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_1_IF_NOTHING_4th_Apr.mp3\" />"
+      "intro": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_JumpActivity_8.mp3\"/>",
+      "prompt": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_UbercornDidntHear_11.mp3\"/>"
     },
     "options": [
       {
-        "sceneId": 14,
+        "sceneId": 8,
         "utterances": [
-          "anything else"
-        ],
-        "type": "virtual"
+          "go home glitch",
+          "go home",
+          "glitch"
+        ]
       }
     ]
   },
   {
     "id": 8,
-    "color": "default",
+    "color": "yellow",
     "isHidden": false,
     "isEndScene": false,
-    "defaultOption": "14",
+    "defaultOption": "9",
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
-      "title": "Room",
-      "text": "You enter a room.",
+      "title": "One more time",
+      "text": "",
       "prompt": "",
       "image": {
         "largeImageUrl": null,
@@ -525,232 +276,29 @@
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_ONE_EYE_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_After_Q_2_Answer_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_question_1_4th_Apr.mp3\" />",
-      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_1_IF_NOTHING_4th_Apr.mp3\" />"
+      "intro": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_DefeatEvil_9.mp3\"/>",
+      "prompt": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_UbercornDidntHear_11.mp3\"/>"
     },
     "options": [
       {
-        "sceneId": 14,
+        "sceneId": 9,
         "utterances": [
-          "anything else"
-        ],
-        "type": "virtual"
+          "go"
+        ]
       }
     ]
   },
   {
     "id": 9,
-    "color": "default",
-    "isHidden": false,
-    "isEndScene": false,
-    "defaultOption": "14",
-    "generateOptions": true,
-    "readPreviousOptions": false,
-    "card": {
-      "title": "Room",
-      "text": "You enter a room.",
-      "prompt": "",
-      "image": {
-        "largeImageUrl": null,
-        "smallImageUrl": null
-      }
-    },
-    "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_TWO_EYES_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_After_Q_2_Answer_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_question_1_4th_Apr.mp3\" />",
-      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_1_IF_NOTHING_4th_Apr.mp3\" />"
-    },
-    "options": [
-      {
-        "sceneId": 14,
-        "utterances": [
-          "anything else"
-        ],
-        "type": "virtual"
-      }
-    ]
-  },
-  {
-    "id": 10,
-    "color": "default",
-    "isHidden": false,
-    "isEndScene": false,
-    "defaultOption": "14",
-    "generateOptions": true,
-    "readPreviousOptions": false,
-    "card": {
-      "title": "Room",
-      "text": "You enter a room.",
-      "prompt": "",
-      "image": {
-        "largeImageUrl": null,
-        "smallImageUrl": null
-      }
-    },
-    "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_3%3A4%3A5%3A6_EYES_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_After_Q_2_Answer_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_question_1_4th_Apr.mp3\" />",
-      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_1_IF_NOTHING_4th_Apr.mp3\" />"
-    },
-    "options": [
-      {
-        "sceneId": 14,
-        "utterances": [
-          "anything else"
-        ],
-        "type": "virtual"
-      }
-    ]
-  },
-  {
-    "id": 11,
-    "color": "default",
-    "isHidden": false,
-    "isEndScene": false,
-    "defaultOption": "14",
-    "generateOptions": true,
-    "readPreviousOptions": false,
-    "card": {
-      "title": "Room",
-      "text": "You enter a room.",
-      "prompt": "",
-      "image": {
-        "largeImageUrl": null,
-        "smallImageUrl": null
-      }
-    },
-    "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_SEVEN_EYES_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_After_Q_2_Answer_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_question_1_4th_Apr.mp3\" />",
-      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_1_IF_NOTHING_4th_Apr.mp3\" />"
-    },
-    "options": [
-      {
-        "sceneId": 14,
-        "utterances": [
-          "anything else"
-        ],
-        "type": "virtual"
-      }
-    ]
-  },
-  {
-    "id": 12,
-    "color": "default",
-    "isHidden": false,
-    "isEndScene": false,
-    "defaultOption": "14",
-    "generateOptions": true,
-    "readPreviousOptions": false,
-    "card": {
-      "title": "Room",
-      "text": "You enter a room.",
-      "prompt": "",
-      "image": {
-        "largeImageUrl": null,
-        "smallImageUrl": null
-      }
-    },
-    "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_8%3A9%3A10_EYES_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_After_Q_2_Answer_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_question_1_4th_Apr.mp3\" />",
-      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_1_IF_NOTHING_4th_Apr.mp3\" />"
-    },
-    "options": [
-      {
-        "sceneId": 14,
-        "utterances": [
-          "anything else"
-        ],
-        "type": "virtual"
-      }
-    ]
-  },
-  {
-    "id": 13,
-    "color": "default",
-    "isHidden": false,
-    "isEndScene": false,
-    "defaultOption": "14",
-    "generateOptions": true,
-    "readPreviousOptions": false,
-    "card": {
-      "title": "Joke",
-      "text": "You enter a room.",
-      "prompt": "",
-      "image": {
-        "largeImageUrl": null,
-        "smallImageUrl": null
-      }
-    },
-    "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_2_OTHER_NUMBER_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_After_Q_2_Answer_4th_Apr.mp3\" />\n<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_question_1_4th_Apr.mp3\" />",
-      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Opening_pg_3_Q_1_IF_NOTHING_4th_Apr.mp3\" />"
-    },
-    "options": [
-      {
-        "sceneId": 14,
-        "utterances": [
-          "anything else"
-        ]
-      }
-    ]
-  },
-  {
-    "id": 14,
-    "color": "default",
-    "isHidden": false,
-    "isEndScene": false,
-    "defaultOption": "15",
-    "generateOptions": true,
-    "readPreviousOptions": false,
-    "card": {
-      "title": "Room",
-      "text": "You enter a room.",
-      "prompt": "",
-      "image": {
-        "largeImageUrl": null,
-        "smallImageUrl": null
-      }
-    },
-    "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_question_1_IF_ANY_ANSWER_4th_Apr.mp3\" /><audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_question_2_4th_Apr.mp3\" />",
-      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_Q_2_IF_NO_ANSWER_After_5Sec_4th_Apr.mp3\" />"
-    },
-    "options": [
-      {
-        "sceneId": 15,
-        "utterances": [
-          "wrong answer"
-        ]
-      },
-      {
-        "sceneId": 16,
-        "utterances": [
-          "no idea",
-          "I do not know",
-          "help"
-        ]
-      },
-      {
-        "sceneId": 17,
-        "utterances": [
-          "today and tomorrow",
-          "today",
-          "tomorrow",
-          "it's today and tomorrow",
-          "the answer is today and tomorrow"
-        ]
-      }
-    ]
-  },
-  {
-    "id": 15,
-    "color": "default",
+    "color": "green",
     "isHidden": false,
     "isEndScene": true,
     "defaultOption": "-1",
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
-      "title": "Room",
-      "text": "You enter a room.",
+      "title": "Thanks",
+      "text": "",
       "prompt": "",
       "image": {
         "largeImageUrl": null,
@@ -758,53 +306,7 @@
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_Q_2_WRONG_ANSWER_4th_Apr.mp3\" />",
-      "prompt": ""
-    },
-    "options": []
-  },
-  {
-    "id": 16,
-    "color": "default",
-    "isHidden": false,
-    "isEndScene": true,
-    "defaultOption": "-1",
-    "generateOptions": true,
-    "readPreviousOptions": false,
-    "card": {
-      "title": "Room",
-      "text": "You enter a room.",
-      "prompt": "",
-      "image": {
-        "largeImageUrl": null,
-        "smallImageUrl": null
-      }
-    },
-    "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_Q_2_IF_NO_ANSWER_FULL_TIME_4th_Apr.mp3\" />",
-      "prompt": ""
-    },
-    "options": []
-  },
-  {
-    "id": 17,
-    "color": "default",
-    "isHidden": false,
-    "isEndScene": true,
-    "defaultOption": "-1",
-    "generateOptions": true,
-    "readPreviousOptions": false,
-    "card": {
-      "title": "Room",
-      "text": "You enter a room.",
-      "prompt": "",
-      "image": {
-        "largeImageUrl": null,
-        "smallImageUrl": null
-      }
-    },
-    "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/rosina_sound/Joke_pg_14_Q_2_CORRECT_4th_Apr.mp3\" />",
+      "intro": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_Outro_10.mp3\"/>",
       "prompt": ""
     },
     "options": []

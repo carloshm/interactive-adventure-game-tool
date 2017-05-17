@@ -28,43 +28,22 @@
       "intent": "AMAZON.CancelIntent"
     },
     {
-      "intent": "YesIntent"
+      "intent": "GoJettersIntent"
     },
     {
-      "intent": "NoIntent"
+      "intent": "MyNameIntent"
     },
     {
-      "intent": "HelpIntent"
+      "intent": "GoIntent"
     },
     {
-      "intent": "AnythingElseIntent"
+      "intent": "TheQueenIntent"
     },
     {
-      "intent": "ZeroIntent"
+      "intent": "GrandmasterGlitchIntent"
     },
     {
-      "intent": "OneIntent"
-    },
-    {
-      "intent": "TwoIntent"
-    },
-    {
-      "intent": "ThreeIntent"
-    },
-    {
-      "intent": "SevenIntent"
-    },
-    {
-      "intent": "EightIntent"
-    },
-    {
-      "intent": "WrongAnswerIntent"
-    },
-    {
-      "intent": "NoIdeaIntent"
-    },
-    {
-      "intent": "TodayAndTomorrowIntent"
+      "intent": "GoHomeGlitchIntent"
     }
   ]
 }

@@ -13,149 +13,25 @@ RepeatOptionsIntent repeat options
 RepeatSceneIntent repeat scene
 RepeatSceneIntent repeat
 GoBackIntent go back
-AMAZON.HelpIntent this should never be invoked
+AMAZON.HelpIntent help
 AMAZON.StopIntent exit story
 AMAZON.StopIntent goodbye
 AMAZON.CancelIntent exit story
-YesIntent yes
-NoIntent no
-HelpIntent help
-YesIntent yes
-NoIntent no
-AnythingElseIntent anything else
-YesIntent yes
-NoIntent no
-AnythingElseIntent anything else
-YesIntent yes
-NoIntent no
-AnythingElseIntent anything else
-ZeroIntent zero
-ZeroIntent none
-ZeroIntent no eyes
-ZeroIntent I have zero eyes
-ZeroIntent I have no eyes
-ZeroIntent I don't have any eyes
-ZeroIntent I haven't got any eyes
-OneIntent one
-OneIntent one eye
-OneIntent only one eye
-OneIntent I have one eye
-OneIntent I've got one eye
-TwoIntent two
-TwoIntent two eyes
-TwoIntent I have two eyes
-TwoIntent I've got two eyes
-ThreeIntent three
-ThreeIntent four
-ThreeIntent five
-ThreeIntent six
-ThreeIntent three eyes
-ThreeIntent four eyes
-ThreeIntent five eyes
-ThreeIntent six eyes
-ThreeIntent I have three eyes
-ThreeIntent I have four eyes
-ThreeIntent I have five eyes
-ThreeIntent I have six eyes
-SevenIntent seven
-SevenIntent seven eyes
-SevenIntent I have seven eyes
-EightIntent eight
-EightIntent nine
-EightIntent ten
-EightIntent eight eyes
-EightIntent nine eyes
-EightIntent ten eyes
-AnythingElseIntent anything else
-ZeroIntent zero
-ZeroIntent none
-ZeroIntent no eyes
-ZeroIntent I have zero eyes
-ZeroIntent I have no eyes
-ZeroIntent I don't have any eyes
-ZeroIntent I haven't got any eyes
-OneIntent one
-OneIntent one eye
-OneIntent only one eye
-OneIntent I have one eye
-OneIntent I've got one eye
-TwoIntent two
-TwoIntent two eyes
-TwoIntent I have two eyes
-TwoIntent I've got two eyes
-ThreeIntent three
-ThreeIntent four
-ThreeIntent five
-ThreeIntent six
-ThreeIntent three eyes
-ThreeIntent four eyes
-ThreeIntent five eyes
-ThreeIntent six eyes
-ThreeIntent I have three eyes
-ThreeIntent I have four eyes
-ThreeIntent I have five eyes
-ThreeIntent I have six eyes
-SevenIntent seven
-SevenIntent seven eyes
-SevenIntent I have seven eyes
-EightIntent eight
-EightIntent nine
-EightIntent ten
-EightIntent eight eyes
-EightIntent nine eyes
-EightIntent ten eyes
-AnythingElseIntent anything else
-ZeroIntent zero
-ZeroIntent none
-ZeroIntent no eyes
-ZeroIntent I have zero eyes
-ZeroIntent I have no eyes
-ZeroIntent I don't have any eyes
-ZeroIntent I haven't got any eyes
-OneIntent one
-OneIntent one eye
-OneIntent only one eye
-OneIntent I have one eye
-OneIntent I've got one eye
-TwoIntent two
-TwoIntent two eyes
-TwoIntent I have two eyes
-TwoIntent I've got two eyes
-ThreeIntent three
-ThreeIntent four
-ThreeIntent five
-ThreeIntent six
-ThreeIntent three eyes
-ThreeIntent four eyes
-ThreeIntent five eyes
-ThreeIntent six eyes
-ThreeIntent I have three eyes
-ThreeIntent I have four eyes
-ThreeIntent I have five eyes
-ThreeIntent I have six eyes
-SevenIntent seven
-SevenIntent seven eyes
-SevenIntent I have seven eyes
-EightIntent eight
-EightIntent nine
-EightIntent ten
-EightIntent eight eyes
-EightIntent nine eyes
-EightIntent ten eyes
-AnythingElseIntent anything else
-AnythingElseIntent anything else
-AnythingElseIntent anything else
-AnythingElseIntent anything else
-AnythingElseIntent anything else
-AnythingElseIntent anything else
-AnythingElseIntent anything else
-AnythingElseIntent anything else
-WrongAnswerIntent wrong answer
-NoIdeaIntent no idea
-NoIdeaIntent I do not know
-NoIdeaIntent help
-TodayAndTomorrowIntent today and tomorrow
-TodayAndTomorrowIntent today
-TodayAndTomorrowIntent tomorrow
-TodayAndTomorrowIntent it's today and tomorrow
-TodayAndTomorrowIntent the answer is today and tomorrow
+GoJettersIntent go jetters
+MyNameIntent my name
+MyNameIntent {AMAZON.GB_FIRST_NAME}
+GoIntent go
+TheQueenIntent the queen
+TheQueenIntent queen
+GrandmasterGlitchIntent grandmaster glitch
+GrandmasterGlitchIntent ubercorn
+GoIntent go
+TheQueenIntent the queen
+TheQueenIntent queen
+GrandmasterGlitchIntent grandmaster glitch
+GrandmasterGlitchIntent ubercorn
+GoIntent go
+GoHomeGlitchIntent go home glitch
+GoHomeGlitchIntent go home
+GoHomeGlitchIntent glitch
+GoIntent go

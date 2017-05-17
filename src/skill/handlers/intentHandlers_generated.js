@@ -17,7 +17,7 @@ module.exports = {
 		processUtterance( intent, session, request, response, "go back" )
 	},
 	"AMAZON.HelpIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "this should never be invoked" )
+		processUtterance( intent, session, request, response, "help" )
 	},
 	"AMAZON.StopIntent": function ( intent, session, request, response ) {
 		processUtterance( intent, session, request, response, "exit story" )
@@ -25,43 +25,22 @@ module.exports = {
 	"AMAZON.CancelIntent": function ( intent, session, request, response ) {
 		processUtterance( intent, session, request, response, "exit story" )
 	},
-	"YesIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "yes" )
+	"GoJettersIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "go jetters" )
 	},
-	"NoIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "no" )
+	"MyNameIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "my name" )
 	},
-	"HelpIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "help" )
+	"GoIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "go" )
 	},
-	"AnythingElseIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "anything else" )
+	"TheQueenIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "the queen" )
 	},
-	"ZeroIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "zero" )
+	"GrandmasterGlitchIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "grandmaster glitch" )
 	},
-	"OneIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "one" )
-	},
-	"TwoIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "two" )
-	},
-	"ThreeIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "three" )
-	},
-	"SevenIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "seven" )
-	},
-	"EightIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "eight" )
-	},
-	"WrongAnswerIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "wrong answer" )
-	},
-	"NoIdeaIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "no idea" )
-	},
-	"TodayAndTomorrowIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "today and tomorrow" )
+	"GoHomeGlitchIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "go home glitch" )
 	},
 }
