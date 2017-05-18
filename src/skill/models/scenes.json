@@ -32,12 +32,12 @@
     "id": 1,
     "color": "green",
     "isHidden": false,
-    "defaultOption": "2",
+    "defaultOption": "-1",
     "isEndScene": false,
     "readPreviousOptions": false,
     "card": {
-      "title": "Ubercorn's Welcome",
-      "text": "",
+      "title": "Welcome to the Academy",
+      "text": "Hello Cadet! Welcome to the Go Jetters Training Academy! \nTo get started shout your name as loud as you can!",
       "prompt": "",
       "image": {
         "largeImageUrl": null,
@@ -45,30 +45,29 @@
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_WelcomeUbercorn_2.mp3\" />",
-      "prompt": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_UbercornDidntHear_11.mp3\"/>"
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_Start.mp3\" />",
+      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_error+name.mp3\"/>"
     },
     "options": [
       {
         "sceneId": 2,
         "utterances": [
-          "my name",
-          "{AMAZON.GB_FIRST_NAME}"
+          "jimmy"
         ]
       }
     ]
   },
   {
     "id": 2,
-    "color": "green",
+    "color": "default",
     "isHidden": false,
     "isEndScene": false,
-    "defaultOption": "3",
+    "defaultOption": "-1",
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
-      "title": "Souvenir Selfies Explained",
-      "text": "",
+      "title": "Ubercorn's Introduction",
+      "text": "Nice to meet you!  I’m Ubercorn and you’re here to be trained as a Go Jetter! \nGet through the first 4 rounds of training and you will be upgraded to a level 2 cadet!",
       "prompt": "",
       "image": {
         "largeImageUrl": null,
@@ -76,8 +75,8 @@
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_SouvenirExplained_3.mp3\"/>",
-      "prompt": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_UbercornDidntHear_11.mp3\"/>"
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_Ubercorn+intro.mp3\" />",
+      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_Error+go.mp3\" />"
     },
     "options": [
       {
@@ -90,83 +89,15 @@
   },
   {
     "id": 3,
-    "color": "green",
-    "isHidden": false,
-    "isEndScene": false,
-    "defaultOption": "5",
-    "generateOptions": true,
-    "readPreviousOptions": false,
-    "card": {
-      "title": "Trafalgar Square",
-      "text": "",
-      "prompt": "",
-      "image": {
-        "largeImageUrl": null,
-        "smallImageUrl": null
-      }
-    },
-    "voice": {
-      "intro": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_GoingToTrafalgar_4.mp3\"/>",
-      "prompt": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_UbercornDidntHear_11.mp3\"/>"
-    },
-    "options": [
-      {
-        "sceneId": 4,
-        "utterances": [
-          "the queen",
-          "queen"
-        ]
-      },
-      {
-        "sceneId": 5,
-        "utterances": [
-          "grandmaster glitch",
-          "ubercorn"
-        ]
-      }
-    ]
-  },
-  {
-    "id": 4,
-    "color": "green",
-    "isHidden": false,
-    "isEndScene": false,
-    "defaultOption": "6",
-    "generateOptions": true,
-    "readPreviousOptions": false,
-    "card": {
-      "title": "Training Part 2",
-      "text": "",
-      "prompt": "",
-      "image": {
-        "largeImageUrl": null,
-        "smallImageUrl": null
-      }
-    },
-    "voice": {
-      "intro": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_EndWarmupBlow_6.mp3\"/>",
-      "prompt": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_UbercornDidntHear_11.mp3\"/>"
-    },
-    "options": [
-      {
-        "sceneId": 6,
-        "utterances": [
-          "go"
-        ]
-      }
-    ]
-  },
-  {
-    "id": 5,
-    "color": "red",
+    "color": "default",
     "isHidden": false,
     "isEndScene": false,
     "defaultOption": "-1",
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
-      "title": "Wrong Answer",
-      "text": "",
+      "title": "Kyan’s training circuit",
+      "text": "Welcome to Kyan’s training circuit! To be a Go Jetter you need to be fit and fast! After the sound, I want to see you run on the spot for 15 seconds.",
       "prompt": "",
       "image": {
         "largeImageUrl": null,
@@ -174,139 +105,7 @@
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_KyleWrongAnswer_5.mp3\"/>",
-      "prompt": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_UbercornDidntHear_11.mp3\"/>"
-    },
-    "options": [
-      {
-        "sceneId": 4,
-        "utterances": [
-          "the queen",
-          "queen"
-        ],
-        "type": "virtual"
-      },
-      {
-        "sceneId": 5,
-        "utterances": [
-          "grandmaster glitch",
-          "ubercorn"
-        ],
-        "type": "virtual"
-      }
-    ]
-  },
-  {
-    "id": 6,
-    "color": "yellow",
-    "isHidden": false,
-    "isEndScene": false,
-    "defaultOption": "7",
-    "generateOptions": true,
-    "readPreviousOptions": false,
-    "card": {
-      "title": "Up we go",
-      "text": "",
-      "prompt": "",
-      "image": {
-        "largeImageUrl": null,
-        "smallImageUrl": null
-      }
-    },
-    "voice": {
-      "intro": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_BlowActivity_7.mp3\"/>",
-      "prompt": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_UbercornDidntHear_11.mp3\"/>"
-    },
-    "options": [
-      {
-        "sceneId": 7,
-        "utterances": [
-          "go"
-        ]
-      }
-    ]
-  },
-  {
-    "id": 7,
-    "color": "yellow",
-    "isHidden": false,
-    "isEndScene": false,
-    "defaultOption": "8",
-    "generateOptions": true,
-    "readPreviousOptions": false,
-    "card": {
-      "title": "Clearing the Grimbots",
-      "text": "",
-      "prompt": "",
-      "image": {
-        "largeImageUrl": null,
-        "smallImageUrl": null
-      }
-    },
-    "voice": {
-      "intro": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_JumpActivity_8.mp3\"/>",
-      "prompt": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_UbercornDidntHear_11.mp3\"/>"
-    },
-    "options": [
-      {
-        "sceneId": 8,
-        "utterances": [
-          "go home glitch",
-          "go home",
-          "glitch"
-        ]
-      }
-    ]
-  },
-  {
-    "id": 8,
-    "color": "yellow",
-    "isHidden": false,
-    "isEndScene": false,
-    "defaultOption": "9",
-    "generateOptions": true,
-    "readPreviousOptions": false,
-    "card": {
-      "title": "One more time",
-      "text": "",
-      "prompt": "",
-      "image": {
-        "largeImageUrl": null,
-        "smallImageUrl": null
-      }
-    },
-    "voice": {
-      "intro": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_DefeatEvil_9.mp3\"/>",
-      "prompt": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_UbercornDidntHear_11.mp3\"/>"
-    },
-    "options": [
-      {
-        "sceneId": 9,
-        "utterances": [
-          "go"
-        ]
-      }
-    ]
-  },
-  {
-    "id": 9,
-    "color": "green",
-    "isHidden": false,
-    "isEndScene": true,
-    "defaultOption": "-1",
-    "generateOptions": true,
-    "readPreviousOptions": false,
-    "card": {
-      "title": "Thanks",
-      "text": "",
-      "prompt": "",
-      "image": {
-        "largeImageUrl": null,
-        "smallImageUrl": null
-      }
-    },
-    "voice": {
-      "intro": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_Outro_10.mp3\"/>",
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_Kyans+training+curcuit.mp3\" />",
       "prompt": ""
     },
     "options": []

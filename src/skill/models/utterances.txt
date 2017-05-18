@@ -18,20 +18,5 @@ AMAZON.StopIntent exit story
 AMAZON.StopIntent goodbye
 AMAZON.CancelIntent exit story
 GoJettersIntent go jetters
-MyNameIntent my name
-MyNameIntent {AMAZON.GB_FIRST_NAME}
-GoIntent go
-TheQueenIntent the queen
-TheQueenIntent queen
-GrandmasterGlitchIntent grandmaster glitch
-GrandmasterGlitchIntent ubercorn
-GoIntent go
-TheQueenIntent the queen
-TheQueenIntent queen
-GrandmasterGlitchIntent grandmaster glitch
-GrandmasterGlitchIntent ubercorn
-GoIntent go
-GoHomeGlitchIntent go home glitch
-GoHomeGlitchIntent go home
-GoHomeGlitchIntent glitch
+JimmyIntent jimmy
 GoIntent go

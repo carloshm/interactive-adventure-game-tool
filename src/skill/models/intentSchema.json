@@ -31,19 +31,10 @@
       "intent": "GoJettersIntent"
     },
     {
-      "intent": "MyNameIntent"
+      "intent": "JimmyIntent"
     },
     {
       "intent": "GoIntent"
-    },
-    {
-      "intent": "TheQueenIntent"
-    },
-    {
-      "intent": "GrandmasterGlitchIntent"
-    },
-    {
-      "intent": "GoHomeGlitchIntent"
     }
   ]
 }

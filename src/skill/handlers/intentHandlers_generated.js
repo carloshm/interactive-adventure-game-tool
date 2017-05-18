@@ -28,19 +28,10 @@ module.exports = {
 	"GoJettersIntent": function ( intent, session, request, response ) {
 		processUtterance( intent, session, request, response, "go jetters" )
 	},
-	"MyNameIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "my name" )
+	"JimmyIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "jimmy" )
 	},
 	"GoIntent": function ( intent, session, request, response ) {
 		processUtterance( intent, session, request, response, "go" )
-	},
-	"TheQueenIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "the queen" )
-	},
-	"GrandmasterGlitchIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "grandmaster glitch" )
-	},
-	"GoHomeGlitchIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "go home glitch" )
 	},
 }

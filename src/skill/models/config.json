@@ -2,9 +2,10 @@
   "applicationId": null,
   "awsProfileName": "",
   "skillName": "My Alexa Skill",
-  "lambdaName": "irfs-gojetters-prototype",
-  "dynamoTableName": "irfs-gojetters-prototype",
-  "dynamoRegion": "us-east-1",
+  "lambdaName": "irfs-machines-gojetters",
+  "dynamoTableName": "irfs-machines-gojetters-table",
+  "dynamoRegion": "eu-west-1",
+  "awsRegion": "eu-west-1",
   "commands": {
     "ResetStateIntent": [
       "start again",
