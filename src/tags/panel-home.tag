@@ -89,6 +89,16 @@
              value={ parent.opts.config.dynamoTableName }>
     </div>
     <div class="input-row">
+      <label for="$inputawsRegionName">
+        AWS Region
+      </label>
+      <input type="text"
+             id="$inputawsRegionName"
+             data-setting="awsRegionName"
+             onblur={ parent.updateGlobalSetting }
+             value={ parent.opts.config.awsRegionName }>
+    </div>
+    <div class="input-row">
       <label for="$inputawsProfileName">
         AWS Profile
         <small>(Optional)</small>
