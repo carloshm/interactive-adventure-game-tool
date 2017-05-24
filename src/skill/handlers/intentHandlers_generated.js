@@ -25,13 +25,25 @@ module.exports = {
 	"AMAZON.CancelIntent": function ( intent, session, request, response ) {
 		processUtterance( intent, session, request, response, "exit story" )
 	},
-	"GoJettersIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "go jetters" )
-	},
-	"JimmyIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "jimmy" )
+	"MyNameIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "my name" )
 	},
 	"GoIntent": function ( intent, session, request, response ) {
 		processUtterance( intent, session, request, response, "go" )
+	},
+	"TrueIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "true" )
+	},
+	"FalseIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "false" )
+	},
+	"SpannerIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "spanner" )
+	},
+	"BalloonIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "balloon" )
+	},
+	"PineappleIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "pineapple" )
 	},
 }

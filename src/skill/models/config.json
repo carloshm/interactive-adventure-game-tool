@@ -120,5 +120,6 @@
       }
     }
   },
-  "undefined": "My Alexa Skill"
+  "undefined": "My Alexa Skill",
+  "awsRegionName": "eu-west-1"
 }

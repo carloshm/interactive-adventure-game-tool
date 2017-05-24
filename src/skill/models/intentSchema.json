@@ -28,13 +28,25 @@
       "intent": "AMAZON.CancelIntent"
     },
     {
-      "intent": "GoJettersIntent"
-    },
-    {
-      "intent": "JimmyIntent"
+      "intent": "MyNameIntent"
     },
     {
       "intent": "GoIntent"
+    },
+    {
+      "intent": "TrueIntent"
+    },
+    {
+      "intent": "FalseIntent"
+    },
+    {
+      "intent": "SpannerIntent"
+    },
+    {
+      "intent": "BalloonIntent"
+    },
+    {
+      "intent": "PineappleIntent"
     }
   ]
 }

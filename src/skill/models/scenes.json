@@ -8,51 +8,54 @@
     "readPreviousOptions": false,
     "card": {
       "title": "Go Jetters",
-      "text": "",
-      "prompt": "Say \"Go Jetters\"",
+      "text": "Hello Cadet! Welcome to the Go Jetters Training Academy!",
+      "prompt": "To get started shout your name as loud as you can!",
       "image": {
         "largeImageUrl": null,
         "smallImageUrl": null
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_IntroAndTheme_1.mp3\"/>",
-      "prompt": "<audio src=\"https://s3-eu-west-1.amazonaws.com/irfs-gojetters-prototype/gojetters_UbercornDidntHear_11.mp3\"/>"
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_Start.mp3\"/>",
+      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_error+name.mp3\"/>"
     },
     "options": [
       {
+        "sceneId": 1,
         "utterances": [
-          "go jetters"
-        ],
-        "sceneId": 1
+          "my name",
+          "{AMAZON.GB_FIRST_NAME}"
+        ]
       }
     ]
   },
   {
     "id": 1,
-    "color": "green",
+    "color": "default",
     "isHidden": false,
-    "defaultOption": "-1",
     "isEndScene": false,
+    "defaultOption": "2",
+    "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
-      "title": "Welcome to the Academy",
-      "text": "Hello Cadet! Welcome to the Go Jetters Training Academy! \nTo get started shout your name as loud as you can!",
-      "prompt": "",
+      "title": "Ubercorn's Introduction",
+      "text": "Nice to meet you!  I’m Ubercorn and you’re here to be trained as a Go Jetter! \nGet through the first 4 rounds of training and you will be upgraded to a level 2 cadet!",
+      "prompt": "If you’re ready start your training, shout GO!",
       "image": {
         "largeImageUrl": null,
         "smallImageUrl": null
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_Start.mp3\" />",
-      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_error+name.mp3\"/>"
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_Ubercorn+intro.mp3\"/>",
+      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_Error+go.mp3\"/>"
     },
     "options": [
       {
         "sceneId": 2,
         "utterances": [
-          "jimmy"
+          "go",
+          "go!"
         ]
       }
     ]
@@ -66,8 +69,8 @@
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
-      "title": "Ubercorn's Introduction",
-      "text": "Nice to meet you!  I’m Ubercorn and you’re here to be trained as a Go Jetter! \nGet through the first 4 rounds of training and you will be upgraded to a level 2 cadet!",
+      "title": "Kyan & Foz",
+      "text": "Welcome to Kyan’s training circuit! To be a Go Jetter you need to be fit and fast! After the sound, I want to see you run on the spot for 15 seconds.",
       "prompt": "",
       "image": {
         "largeImageUrl": null,
@@ -75,14 +78,22 @@
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_Ubercorn+intro.mp3\" />",
-      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_Error+go.mp3\" />"
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_kyan_foz_joined.mp3\"/>",
+      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_error+foz.mp3\"/>"
     },
     "options": [
       {
         "sceneId": 3,
         "utterances": [
-          "go"
+          "true",
+          "yes"
+        ]
+      },
+      {
+        "sceneId": 4,
+        "utterances": [
+          "false",
+          "no"
         ]
       }
     ]
@@ -96,8 +107,8 @@
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
-      "title": "Kyan’s training circuit",
-      "text": "Welcome to Kyan’s training circuit! To be a Go Jetter you need to be fit and fast! After the sound, I want to see you run on the spot for 15 seconds.",
+      "title": "Great job cadet!",
+      "text": "No, the Eiffel Tower is made from a strong metal called wrought Iron.",
       "prompt": "",
       "image": {
         "largeImageUrl": null,
@@ -105,8 +116,149 @@
       }
     },
     "voice": {
-      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_Kyans+training+curcuit.mp3\" />",
-      "prompt": ""
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_no_lars_joined.mp3\"/>",
+      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_error+foz.mp3\"/>"
+    },
+    "options": [
+      {
+        "sceneId": 5,
+        "utterances": [
+          "spanner",
+          "a spanner"
+        ]
+      },
+      {
+        "sceneId": 9,
+        "utterances": [
+          "balloon",
+          "a balloon"
+        ]
+      },
+      {
+        "sceneId": 10,
+        "utterances": [
+          "pineapple",
+          "a pineapple",
+          "pineapples"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "color": "default",
+    "isHidden": false,
+    "isEndScene": false,
+    "defaultOption": "-1",
+    "generateOptions": true,
+    "readPreviousOptions": false,
+    "card": {
+      "title": "Great job cadet!",
+      "text": "Yes, the Eiffel Tower is made from a strong metal called wrought Iron.",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_yes_lars_joined.mp3\"/>",
+      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_error+foz.mp3\"/>"
+    },
+    "options": [
+      {
+        "sceneId": 5,
+        "utterances": [
+          "spanner",
+          "a spanner"
+        ],
+        "type": "virtual"
+      },
+      {
+        "sceneId": 9,
+        "utterances": [
+          "balloon",
+          "a balloon"
+        ],
+        "type": "virtual"
+      },
+      {
+        "sceneId": 10,
+        "utterances": [
+          "pineapple",
+          "a pineapple",
+          "pineapples"
+        ],
+        "type": "virtual"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "color": "default",
+    "isHidden": false,
+    "isEndScene": true,
+    "defaultOption": "-1",
+    "generateOptions": true,
+    "readPreviousOptions": false,
+    "card": {
+      "title": "Spanner!",
+      "text": "Yes, a spanner, you can use that to tighten up the bolts!",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_spanner_to_end.mp3\"/>",
+      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_error+lars.mp3\"/>"
+    },
+    "options": []
+  },
+  {
+    "id": 9,
+    "color": "default",
+    "isHidden": false,
+    "isEndScene": true,
+    "defaultOption": "-1",
+    "generateOptions": true,
+    "readPreviousOptions": false,
+    "card": {
+      "title": "Balloon!",
+      "text": "Yes, the air from the balloon might help get us off the ground!",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_balloon_to_end.mp3\"/>",
+      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_error+lars.mp3\"/>"
+    },
+    "options": []
+  },
+  {
+    "id": 10,
+    "color": "default",
+    "isHidden": false,
+    "isEndScene": true,
+    "defaultOption": "-1",
+    "generateOptions": true,
+    "readPreviousOptions": false,
+    "card": {
+      "title": "Pineapple!",
+      "text": "Mmm yes, tasty pineapple, the engine needs some more juice.",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_pineapple_to_end.mp3\"/>",
+      "prompt": "<audio src=\"https://s3.eu-west-2.amazonaws.com/irfs-machines-gojettersv2/gojetters_error+lars.mp3\"/>"
     },
     "options": []
   }

@@ -17,6 +17,25 @@ AMAZON.HelpIntent help
 AMAZON.StopIntent exit story
 AMAZON.StopIntent goodbye
 AMAZON.CancelIntent exit story
-GoJettersIntent go jetters
-JimmyIntent jimmy
+MyNameIntent my name
+MyNameIntent {AMAZON.GB_FIRST_NAME}
 GoIntent go
+GoIntent go!
+TrueIntent true
+TrueIntent yes
+FalseIntent false
+FalseIntent no
+SpannerIntent spanner
+SpannerIntent a spanner
+BalloonIntent balloon
+BalloonIntent a balloon
+PineappleIntent pineapple
+PineappleIntent a pineapple
+PineappleIntent pineapples
+SpannerIntent spanner
+SpannerIntent a spanner
+BalloonIntent balloon
+BalloonIntent a balloon
+PineappleIntent pineapple
+PineappleIntent a pineapple
+PineappleIntent pineapples
