@@ -28,6 +28,12 @@
       "intent": "AMAZON.CancelIntent"
     },
     {
+      "slots": [
+        {
+          "name": "Name",
+          "type": "AMAZON.GB_FIRST_NAME"
+        }
+      ],
       "intent": "MyNameIntent"
     },
     {

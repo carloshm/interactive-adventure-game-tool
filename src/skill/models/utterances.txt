@@ -18,7 +18,7 @@ AMAZON.StopIntent exit story
 AMAZON.StopIntent goodbye
 AMAZON.CancelIntent exit story
 MyNameIntent my name
-MyNameIntent {AMAZON.GB_FIRST_NAME}
+MyNameIntent {Name}
 GoIntent go
 GoIntent go!
 TrueIntent true
