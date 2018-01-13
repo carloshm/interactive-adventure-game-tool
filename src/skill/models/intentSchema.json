@@ -28,46 +28,10 @@
       "intent": "AMAZON.CancelIntent"
     },
     {
-      "intent": "YesIntent"
+      "intent": "PositiveIntent"
     },
     {
-      "intent": "PeterIntent"
-    },
-    {
-      "intent": "FlopsyIntent"
-    },
-    {
-      "intent": "LettucesIntent"
-    },
-    {
-      "intent": "RadishesIntent"
-    },
-    {
-      "intent": "CabbagesIntent"
-    },
-    {
-      "intent": "NoIntent"
-    },
-    {
-      "intent": "HideIntent"
-    },
-    {
-      "intent": "RunIntent"
-    },
-    {
-      "intent": "CryForHelpIntent"
-    },
-    {
-      "intent": "WriggleFreeIntent"
-    },
-    {
-      "intent": "DoorIntent"
-    },
-    {
-      "intent": "GardenIntent"
-    },
-    {
-      "intent": "ToolShedIntent"
+      "intent": "NegativeIntent"
     }
   ]
 }
