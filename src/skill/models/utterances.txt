@@ -16,7 +16,7 @@ GoBackIntent previous scene
 AMAZON.HelpIntent help
 AMAZON.StopIntent exit story
 AMAZON.StopIntent goodbye
-AMAZON.CancelIntent exit story
+AMAZON.CancelIntent cancel story
 PositiveIntent positive
 PositiveIntent yes
 PositiveIntent yeah
@@ -40,9 +40,5 @@ OpenTheHiddenDoorIntent hidden door
 LookAroundIntent look around
 LookAroundIntent look
 StartPlayingIntent start playing
-OpenTheBoxIntent open the box
-OpenTheBoxIntent open box
-OpenTheBoxIntent open the box
-OpenTheBoxIntent open box
 OpenTheBoxIntent open the box
 OpenTheBoxIntent open box

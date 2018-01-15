@@ -34,7 +34,7 @@
       "goodbye"
     ],
     "AMAZON.CancelIntent": [
-      "exit story"
+      "cancel story"
     ]
   },
   "responses": {

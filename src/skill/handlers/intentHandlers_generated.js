@@ -23,7 +23,7 @@ module.exports = {
 		processUtterance( intent, session, request, response, "exit story" )
 	},
 	"AMAZON.CancelIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "exit story" )
+		processUtterance( intent, session, request, response, "cancel story" )
 	},
 	"PositiveIntent": function ( intent, session, request, response ) {
 		processUtterance( intent, session, request, response, "positive" )

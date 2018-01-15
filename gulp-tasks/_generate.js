@@ -1,5 +1,6 @@
 var fs = require('fs')
 var gulp = require('gulp')
+var log = require('fancy-log');
 var $ = require('gulp-load-plugins')()
 
 gulp.task('generate', function ( cb ) {
@@ -13,6 +14,7 @@ gulp.task('generate', function ( cb ) {
     var intentNames = new Set()
     var functionDefs = {}
     var utterances = []
+    var dict = {}
 
     intentSchema.intents = [{ intent: 'UnrecognizedIntent' }]
     utterances.push.apply( utterances, [
@@ -28,7 +30,16 @@ gulp.task('generate', function ( cb ) {
       functionDefs[ intent ] = createFunctionDefinition( intent, config.commands[ intent ][0] )
       config.commands[ intent ].forEach( function ( utterance ) {
         utterance = replaceIntegersWithWords( utterance )
-        utterances.push( intent + ' ' + utterance )
+        //utterances.push( intent + ' ' + utterance )
+        if (dict[utterance]) {
+          if (dict[utterance] != intent) {
+            log('ERROR: command utterance clash for "' + utterance + '", and intents "' + dict[utterance] + '" and "' + intent + '". Second intent will be ignored')
+          } else {
+            log('INFO: ignoring repeated command utterance "' + utterance + '" for existing intent "' + intent + '"')
+          }
+        } else {
+          dict[utterance] = intent
+        }
         intentNames.add( intent )
       })
     })
@@ -42,10 +53,25 @@ gulp.task('generate', function ( cb ) {
         intentNames.add( intent )
         option.utterances.forEach( utterance => {
           utterance = replaceIntegersWithWords( utterance )
-          utterances.push( intent + ' ' + utterance )
+          //utterances.push( intent + ' ' + utterance )
+          if (dict[utterance]) {
+            if (dict[utterance] != intent) {
+              log('ERROR: utterance clash for "' + utterance + '", and intents "' + dict[utterance] + '" and "' + intent + '". Second intent will be ignored')
+            } else {
+              log('INFO: ignoring repeated utterance "' + utterance + '" for existing intent "' + intent + '"')
+            }
+          } else {
+            dict[utterance] = intent
+          }
         })
       })
     })
+
+    // build the deduplicated utterances and intents into single list
+    for(var utterance in dict) {
+      var intent = dict[utterance]
+      utterances.push( intent + ' ' + utterance )
+    }
 
     // construct intent schema
     for ( var name in functionDefs ) {
