@@ -23,7 +23,7 @@
       "repeat scene",
       "repeat"
     ],
-    "GoBackIntent": [
+    "PreviousSceneIntent": [
       "previous scene"
     ],
     "AMAZON.HelpIntent": [

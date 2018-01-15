@@ -333,6 +333,28 @@
         value={ scene.voice.prompt }></autogrow-textarea>
     </div>
 
+    <div class="input-row">
+      <label for="$voiceReentry">
+        Reentry
+        <small>(Optional)</small>
+      </label>
+      <autogrow-textarea
+        id="$voiceReentry"
+        onblur={ save }
+        value={ scene.voice.reentry }></autogrow-textarea>
+    </div>
+
+    <div class="input-row">
+        <label for="$voiceExit">
+        Exit
+        <small>(Optional)</small>
+      </label>
+      <autogrow-textarea
+        id="$voiceExit"
+        onblur={ save }
+        value={ scene.voice.outro }></autogrow-textarea>
+    </div>
+
     <br>
 
     <a class="hotspot float-right"
@@ -450,7 +472,9 @@
 
       this.scene.voice = {
         intro: this.$intro.value.trim(),
-        prompt: this.$voicePrompt.value.trim()
+        prompt: this.$voicePrompt.value.trim(),
+        reentry: this.$voiceReentry.value.trim(),
+        outro: this.$voiceExit.value.trim()
       }
 
       var $cardImage = this.$collapsibleCardImage._tag

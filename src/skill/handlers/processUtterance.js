@@ -41,8 +41,21 @@ function processUtterance ( intent, session, request, response, utterance ) {
   if ( option ) {
       console.log("found option!",option);
     var nextScene = utils.findNextScene( currentScene, option );
-    session.attributes.breadcrumbs.push( currentScene.id )
-    session.attributes.currentSceneId = nextScene.id
+    // Don't push leaf scenes into breadcrumbs to avoid problems on recovery
+    if (! nextScene.readPreviousOptions ) {
+      session.attributes.breadcrumbs.push( currentScene.id )
+      session.attributes.currentSceneId = nextScene.id
+    }
+    // keep track of scenes with reenty text for when we come back to them
+    if ( currentScene.voice.reentry && session.attributes.reentryScenes.indexOf(currentScene.id) < 0 ) {
+      console.log("adding scene " + currentScene.id + " to reentry list")
+      session.attributes.reentryScenes.push( currentScene.id )
+    }
+    // set up outro text in session, it will become part of the next scene's intro
+    if ( currentScene.voice.outro ) {
+      console.log("Adding outro text to session for scene " + currentScene.id)
+      session.attributes.outro = currentScene.voice.outro;
+    }
     respond.readSceneWithCard( nextScene, session, response )
   }
 

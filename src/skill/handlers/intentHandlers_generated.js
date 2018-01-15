@@ -13,7 +13,7 @@ module.exports = {
 	"RepeatSceneIntent": function ( intent, session, request, response ) {
 		processUtterance( intent, session, request, response, "repeat scene" )
 	},
-	"GoBackIntent": function ( intent, session, request, response ) {
+	"PreviousSceneIntent": function ( intent, session, request, response ) {
 		processUtterance( intent, session, request, response, "previous scene" )
 	},
 	"AMAZON.HelpIntent": function ( intent, session, request, response ) {
@@ -43,10 +43,13 @@ module.exports = {
 	"LookAroundIntent": function ( intent, session, request, response ) {
 		processUtterance( intent, session, request, response, "look around" )
 	},
-	"StartPlayingIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "start playing" )
+	"EnterCorridorIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "enter corridor" )
 	},
 	"OpenTheBoxIntent": function ( intent, session, request, response ) {
 		processUtterance( intent, session, request, response, "open the box" )
+	},
+	"GoBackIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "go back" )
 	},
 }

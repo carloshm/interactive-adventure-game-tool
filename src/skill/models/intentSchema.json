@@ -16,7 +16,7 @@
       "intent": "RepeatSceneIntent"
     },
     {
-      "intent": "GoBackIntent"
+      "intent": "PreviousSceneIntent"
     },
     {
       "intent": "AMAZON.HelpIntent"
@@ -46,10 +46,13 @@
       "intent": "LookAroundIntent"
     },
     {
-      "intent": "StartPlayingIntent"
+      "intent": "EnterCorridorIntent"
     },
     {
       "intent": "OpenTheBoxIntent"
+    },
+    {
+      "intent": "GoBackIntent"
     }
   ]
 }

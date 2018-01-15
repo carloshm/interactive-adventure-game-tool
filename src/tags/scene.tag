@@ -1,6 +1,6 @@
 <scene id="scene-{ opts.scene.id }" class={ 'is-selected': isSelected }>
 
-  <div class="cell { opts.scene.color }{ opts.scene.isHidden ? ' is-hidden' : '' }" 
+  <div class="cell { opts.scene.color }{ opts.scene.isHidden ? ' is-hidden' : '' }"
 onclick= { onClickDestination}
 >
 
@@ -88,10 +88,10 @@ onclick= { onClickDestination}
 
     this.onClickDestroyOption = e => {
       e.stopPropagation()
-          if (opts.type == 'virtual') { 
+          if (opts.type == 'virtual') {
           } else {
               removeScene( e.item.scene )
-          } 
+          }
       var options = this.parent.opts.scene.options
       var index = options.findIndex( option => option.sceneId === e.item.scene.id )
       options.splice( index, 1 )
@@ -197,7 +197,9 @@ this.onClickDestination = e => {
         },
         voice: {
           intro: 'You enter a room. What would you like to do?',
-          prompt: ''
+          prompt: '',
+          reentry: '',
+          outro: ''
         },
         options: []
       }

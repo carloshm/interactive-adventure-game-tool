@@ -48,11 +48,11 @@
     "color": "yellow",
     "isHidden": false,
     "defaultOption": "-1",
-    "isEndScene": true,
+    "isEndScene": false,
     "readPreviousOptions": false,
     "card": {
-      "title": "Entrance",
-      "text": "You stand in a room with several doors.",
+      "title": "Corridor",
+      "text": "You stand in a corridor with several doors.",
       "prompt": "",
       "image": {
         "largeImageUrl": null,
@@ -60,8 +60,10 @@
       }
     },
     "voice": {
-      "intro": "You stand in front of several doors. Which would you like to open?",
-      "prompt": ""
+      "intro": "You stand in a corridor with several doors in it. Would you like to open the red door, or the green door?",
+      "prompt": "",
+      "reentry": "You are back in the corridor.",
+      "outro": ""
     },
     "options": [
       {
@@ -69,6 +71,7 @@
         "utterances": [
           "open the red door",
           "open red door",
+          "the red door",
           "red door"
         ]
       },
@@ -77,6 +80,7 @@
         "utterances": [
           "open the green door",
           "open green door",
+          "the green door",
           "green door"
         ]
       },
@@ -85,6 +89,7 @@
         "utterances": [
           "open the hidden door",
           "open hidden door",
+          "the hidden door",
           "hidden door"
         ]
       },
@@ -101,7 +106,7 @@
     "id": 2,
     "color": "default",
     "isHidden": false,
-    "isEndScene": true,
+    "isEndScene": false,
     "defaultOption": "1",
     "generateOptions": true,
     "readPreviousOptions": false,
@@ -115,14 +120,16 @@
       }
     },
     "voice": {
-      "intro": "You can choose which door you open. For example to open the red door say \"Open the red door\". Now say \"start playing\" to begin.",
-      "prompt": ""
+      "intro": "You will shortly find yourself in a corridor where you can choose which door you open. For example to open the red door say \"Open the red door\". Now say \"enter corridor\" to begin.",
+      "prompt": "",
+      "reentry": "",
+      "outro": ""
     },
     "options": [
       {
         "sceneId": 1,
         "utterances": [
-          "start playing"
+          "enter corridor"
         ],
         "type": "virtual"
       }
@@ -156,6 +163,13 @@
           "open the box",
           "open box"
         ]
+      },
+      {
+        "sceneId": 1,
+        "utterances": [
+          "go back"
+        ],
+        "type": "virtual"
       }
     ]
   },
@@ -191,8 +205,8 @@
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
-      "title": "Blue Room",
-      "text": "You enter a blue room.",
+      "title": "Green Room",
+      "text": "You enter a green room.",
       "prompt": "",
       "image": {
         "largeImageUrl": null,
@@ -200,8 +214,10 @@
       }
     },
     "voice": {
-      "intro": "You enter a blue room. There is a box here.",
-      "prompt": ""
+      "intro": "You enter a green room. There is a box here.",
+      "prompt": "",
+      "reentry": "",
+      "outro": ""
     },
     "options": [
       {
@@ -210,6 +226,13 @@
           "open the box",
           "open box"
         ]
+      },
+      {
+        "sceneId": 1,
+        "utterances": [
+          "go back"
+        ],
+        "type": "virtual"
       }
     ]
   },
@@ -231,15 +254,16 @@
       }
     },
     "voice": {
-      "intro": "You enter a hidden room. There is a box here.",
-      "prompt": ""
+      "intro": "You enter a hidden room. The room is completely empty.",
+      "prompt": "",
+      "reentry": "",
+      "outro": "You walk out, closing the door behind you."
     },
     "options": [
       {
-        "sceneId": 8,
+        "sceneId": 1,
         "utterances": [
-          "open the box",
-          "open box"
+          "go back"
         ],
         "type": "virtual"
       }
@@ -263,8 +287,10 @@
       }
     },
     "voice": {
-      "intro": "You can see a red door, a green door and a blue door. You also spot a hidden door. They are all unlocked, and look like you can open them.",
-      "prompt": ""
+      "intro": "You can see a red door, a green door and a hidden door. They are all unlocked, and look like you can open them.",
+      "prompt": "",
+      "reentry": "",
+      "outro": ""
     },
     "options": []
   },
@@ -286,8 +312,10 @@
       }
     },
     "voice": {
-      "intro": "You enter a room. What would you like to do?",
-      "prompt": ""
+      "intro": "You open the box. It contains treasure. You have won! Thanks for playing.",
+      "prompt": "",
+      "reentry": "",
+      "outro": ""
     },
     "options": []
   }

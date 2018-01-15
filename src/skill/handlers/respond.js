@@ -5,59 +5,133 @@ var dynamo = require('./dynamoDB')
 
 module.exports = {
 
-    readSceneWithCard: function ( scene, session, response ) {
-        // exit without prompt if end scene
-        if (scene.isEndScene == true) {
-            session.attributes.breadcrumbs = []
-                delete session.attributes.isAskingToRestoreState
-
-                var json = buildResponse( scene )
-                dynamo.putUserState( session, function ( data ) {
-                    console.log( data.message )
-                        response.tellWithCard(
-                                json.speechOutput,
-                                json.cardTitle,
-                                json.cardOutput,
-                                json.cardImage
-                                )
-                })
-
-
-        } else {
-
-            var json = buildResponse( scene )
-                dynamo.putUserState( session, function ( data ) {
-                    console.log( data.message )
-                        response.askWithCard(
-                                json.speechOutput,
-                                json.repromptOutput,
-                                json.cardTitle,
-                                json.cardOutput,
-                                json.cardImage
-                                )
-                })
-        }
+    readSceneWithCardFull: function ( scene, session, response ) {
+      readSceneWithCardChecks(scene, session, response, false)
     },
 
-  exitWithCard: function ( scene, session, response ) {
-    var json = buildResponse( scene )
-    dynamo.putUserState( session, function ( data ) {
-      console.log( data.message )
-      response.tellWithCard(
-        json.speechOutput,
-        json.cardTitle,
-        json.cardOutput,
-        json.cardImage
-      )
-    })
-  }
+    readSceneWithCard: function ( scene, session, response ) {
+      readSceneWithCardChecks(scene, session, response, true)
+    },
+
+    exitWithCard: function ( scene, session, response ) {
+      if (scene.isEndScene == true) {
+        session.attributes.breadcrumbs = []
+        delete session.attributes.isAskingToRestoreState
+      }
+      var json = buildResponse( scene, session, false )
+      dynamo.putUserState( session, function ( data ) {
+        console.log( data.message )
+        response.tellWithCard(
+          json.speechOutput,
+          json.cardTitle,
+          json.cardOutput,
+          json.cardImage
+        )
+      })
+    }
 
 }
 
-function buildResponse ( scene ){
+function readSceneWithCardChecks ( scene, session, response, reentryCheck ) {
+    // exit without prompt if end scene
+    if (scene.isEndScene == true) {
+        session.attributes.breadcrumbs = []
+            delete session.attributes.isAskingToRestoreState
 
-  var voicePrompt = scene.voice.prompt.trim() || buildPrompt( scene, true )
-  var cardPrompt  = scene.card.prompt.trim()  || buildPrompt( scene, false )
+            var json = buildResponse( scene, session, false )
+            dynamo.putUserState( session, function ( data ) {
+                console.log( data.message )
+                    response.tellWithCard(
+                            json.speechOutput,
+                            json.cardTitle,
+                            json.cardOutput,
+                            json.cardImage
+                            )
+            })
+
+
+    } else {
+
+      var json = buildResponse( scene, session, reentryCheck )
+      if (scene.readPreviousOptions) {
+         console.log('skipping db store for leaf scene')
+         response.askWithCard(
+                          json.speechOutput,
+                          json.repromptOutput,
+                          json.cardTitle,
+                          json.cardOutput,
+                          json.cardImage
+                          )
+      } else {
+          dynamo.putUserState( session, function ( data ) {
+              console.log( data.message )
+                  response.askWithCard(
+                          json.speechOutput,
+                          json.repromptOutput,
+                          json.cardTitle,
+                          json.cardOutput,
+                          json.cardImage
+                          )
+          })
+      }
+    }
+}
+
+function readSceneWithCardChecks ( scene, session, response, reentryCheck ) {
+    // exit without prompt if end scene
+    if (scene.isEndScene == true) {
+        session.attributes.breadcrumbs = []
+            delete session.attributes.isAskingToRestoreState
+
+            var json = buildResponse( scene, session, false )
+            dynamo.putUserState( session, function ( data ) {
+                console.log( data.message )
+                    response.tellWithCard(
+                            json.speechOutput,
+                            json.cardTitle,
+                            json.cardOutput,
+                            json.cardImage
+                            )
+            })
+
+
+    } else {
+
+      var json = buildResponse( scene, session, reentryCheck )
+      if (scene.readPreviousOptions) {
+         console.log('skipping db store for leaf scene')
+         response.askWithCard(
+                          json.speechOutput,
+                          json.repromptOutput,
+                          json.cardTitle,
+                          json.cardOutput,
+                          json.cardImage
+                          )
+      } else {
+          dynamo.putUserState( session, function ( data ) {
+              console.log( data.message )
+                  response.askWithCard(
+                          json.speechOutput,
+                          json.repromptOutput,
+                          json.cardTitle,
+                          json.cardOutput,
+                          json.cardImage
+                          )
+          })
+      }
+    }
+}
+
+function buildResponse ( scene, session, reentryCheck ){
+
+  var voiceIntro = buildIntro( scene, session, reentryCheck );
+  var voicePrompt = buildPrompt( scene, true )
+  var cardPrompt = '';
+  if (scene.card.prompt) {
+    cardPrompt  = scene.card.prompt.trim()
+  } else {
+    cardPrompt = buildPrompt( scene, false )
+  }
 
   return {
 
@@ -65,9 +139,7 @@ function buildResponse ( scene ){
     speechOutput: {
       type: AlexaSkill.SPEECH_OUTPUT_TYPE.SSML,
       ssml: '<speak>' +
-            scene.voice.intro.trim() +
-            //'<break time="300ms"/>' +
-            //voicePrompt +
+            voiceIntro +
             '</speak>'
     },
 
@@ -75,7 +147,6 @@ function buildResponse ( scene ){
     repromptOutput: {
       type: AlexaSkill.SPEECH_OUTPUT_TYPE.SSML,
       ssml: '<speak>' +
-            //'I\'m sorry.<break time="200ms"/>' +
             voicePrompt +
             '</speak>'
     },
@@ -91,20 +162,45 @@ function buildResponse ( scene ){
 
 }
 
+function buildIntro ( scene, session, reentryCheck ) {
+  var prefix = ''
+  if ( session.attributes.outro ) {
+    prefix = session.attributes.outro
+    session.attributes.outro = null
+  }
+  var speech = ''
+  if ( reentryCheck && scene.voice.reentry && session.attributes.reentryScenes.indexOf(scene.id) > -1 ) {
+    speech = scene.voice.reentry.trim()
+  } else if ( scene.voice.intro ) {
+    speech = scene.voice.intro.trim()
+  }
+  if (prefix && speech) {
+    return prefix + '<break time="200ms" /> ' + speech
+  } else if (prefix && !speech) {
+    return prefix
+  }
+  return speech
+}
+
 function buildPrompt ( scene, isForSpeech ) {
   var utils = require('./utils')
   var options = []
 
   if ( scene.voice.prompt ) return scene.voice.prompt.trim()
 
-  var options = scene.options.filter( function ( option ) {
-    return ! utils.findResponseBySceneId( option.sceneId ).isHidden
-  }).map( function ( option ) {
-    return option.utterances[0]
-  })
+  if ( scene.options ) {
+    options = scene.options.filter( function ( option ) {
+      return ! utils.findResponseBySceneId( option.sceneId ).isHidden
+    }).map( function ( option ) {
+      return option.utterances[0]
+    })
+  }
 
   var hasOptions = ( options.length > 0 )
-  if ( ! hasOptions ) return ''
+  if ( ! hasOptions) {
+    // there are no options on this scene, but we aren't reprompting with the previous scene's options.
+    options[0] = 'previous scene';
+  }
 
   var preamble = options.length > 1 ? 'You can say, ' : 'Say, '
   return assemble( preamble, options, isForSpeech )

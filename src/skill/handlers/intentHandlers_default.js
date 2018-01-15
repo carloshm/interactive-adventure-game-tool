@@ -7,12 +7,13 @@ var defaultIntentHandlers = {
 
   "LaunchIntent": function ( intent, session, request, response ) {
     session.attributes.breadcrumbs = []
+    session.attributes.reentryScenes = []
     session.attributes.currentSceneId = utils.findFirstScene().id
     var scene = utils.findResponseBySceneId( session.attributes.currentSceneId )
     respond.readSceneWithCard( scene, session, response )
   },
 
-  "GoBackIntent": function ( intent, session, request, response ) {
+  "PreviousSceneIntent": function ( intent, session, request, response ) {
     if ( session.attributes.isAskingToRestoreState ) {
       return defaultIntentHandlers["UnrecognizedIntent"]( intent, session, request, response )
     }
@@ -39,7 +40,8 @@ var defaultIntentHandlers = {
         scene.options = previousScene.options
       }
     }
-    respond.readSceneWithCard( scene, session, response )
+    // avoid reenty text when repeating a scene
+    respond.readSceneWithCardFull( scene, session, response )
   },
 
   "RepeatOptionsIntent": function ( intent, session, request, response ) {
@@ -81,6 +83,7 @@ var defaultIntentHandlers = {
 
   "ResetStateIntent": function ( intent, session, request, response ) {
     session.attributes.breadcrumbs = []
+    session.attributes.reentryScenes = []
     delete session.attributes.isAskingToRestoreState
     session.attributes.currentSceneId = utils.findFirstScene().id
     var scene = utils.findResponseBySceneId( session.attributes.currentSceneId )
@@ -88,6 +91,7 @@ var defaultIntentHandlers = {
   },
 
   "RestoreStateIntent": function ( intent, session, request, response ) {
+    session.attributes.reentryScenes = []
     if ( session.attributes.isAskingToRestoreState ) {
       // if asking to resume previous state
       delete session.attributes.isAskingToRestoreState
