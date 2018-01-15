@@ -12,7 +12,7 @@ RestoreStateIntent resume
 RepeatOptionsIntent repeat options
 RepeatSceneIntent repeat scene
 RepeatSceneIntent repeat
-GoBackIntent go back
+GoBackIntent previous scene
 AMAZON.HelpIntent help
 AMAZON.StopIntent exit story
 AMAZON.StopIntent goodbye
@@ -28,3 +28,21 @@ NegativeIntent nope
 NegativeIntent never
 NegativeIntent no way
 NegativeIntent nah
+OpenTheRedDoorIntent open the red door
+OpenTheRedDoorIntent open red door
+OpenTheRedDoorIntent red door
+OpenTheGreenDoorIntent open the green door
+OpenTheGreenDoorIntent open green door
+OpenTheGreenDoorIntent green door
+OpenTheHiddenDoorIntent open the hidden door
+OpenTheHiddenDoorIntent open hidden door
+OpenTheHiddenDoorIntent hidden door
+LookAroundIntent look around
+LookAroundIntent look
+StartPlayingIntent start playing
+OpenTheBoxIntent open the box
+OpenTheBoxIntent open box
+OpenTheBoxIntent open the box
+OpenTheBoxIntent open box
+OpenTheBoxIntent open the box
+OpenTheBoxIntent open box

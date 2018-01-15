@@ -32,6 +32,24 @@
     },
     {
       "intent": "NegativeIntent"
+    },
+    {
+      "intent": "OpenTheRedDoorIntent"
+    },
+    {
+      "intent": "OpenTheGreenDoorIntent"
+    },
+    {
+      "intent": "OpenTheHiddenDoorIntent"
+    },
+    {
+      "intent": "LookAroundIntent"
+    },
+    {
+      "intent": "StartPlayingIntent"
+    },
+    {
+      "intent": "OpenTheBoxIntent"
     }
   ]
 }

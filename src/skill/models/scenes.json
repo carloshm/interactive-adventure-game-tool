@@ -9,14 +9,14 @@
     "card": {
       "title": "Welcome",
       "text": "Welcome to the story",
-      "prompt": "Are you ready to begin?",
+      "prompt": "Have you visited before?",
       "image": {
         "largeImageUrl": null,
         "smallImageUrl": "https://s3.eu-west-2.amazonaws.com/int-irfs-interactive-story/peter_rabbit/img/peter04.jpg"
       }
     },
     "voice": {
-      "intro": "Would you like to play a game?",
+      "intro": "Welcome, have you visited before?",
       "prompt": ""
     },
     "options": [
@@ -45,14 +45,14 @@
   },
   {
     "id": 1,
-    "color": "default",
+    "color": "yellow",
     "isHidden": false,
-    "defaultOption": "",
+    "defaultOption": "-1",
     "isEndScene": true,
     "readPreviousOptions": false,
     "card": {
-      "title": "Congratulations",
-      "text": "Thanks for playing",
+      "title": "Entrance",
+      "text": "You stand in a room with several doors.",
       "prompt": "",
       "image": {
         "largeImageUrl": null,
@@ -60,22 +60,54 @@
       }
     },
     "voice": {
-      "intro": "By saying yes you have won the game",
+      "intro": "You stand in front of several doors. Which would you like to open?",
       "prompt": ""
     },
-    "options": []
+    "options": [
+      {
+        "sceneId": 3,
+        "utterances": [
+          "open the red door",
+          "open red door",
+          "red door"
+        ]
+      },
+      {
+        "sceneId": 5,
+        "utterances": [
+          "open the green door",
+          "open green door",
+          "green door"
+        ]
+      },
+      {
+        "sceneId": 6,
+        "utterances": [
+          "open the hidden door",
+          "open hidden door",
+          "hidden door"
+        ]
+      },
+      {
+        "sceneId": 7,
+        "utterances": [
+          "look around",
+          "look"
+        ]
+      }
+    ]
   },
   {
     "id": 2,
     "color": "default",
     "isHidden": false,
     "isEndScene": true,
-    "defaultOption": "-1",
+    "defaultOption": "1",
     "generateOptions": true,
     "readPreviousOptions": false,
     "card": {
-      "title": "Thanks",
-      "text": "Thanks for playing",
+      "title": "Instructions",
+      "text": "You can choose which door you open. For example to open the red door say \"Open the red door\".",
       "prompt": "",
       "image": {
         "largeImageUrl": null,
@@ -83,7 +115,178 @@
       }
     },
     "voice": {
-      "intro": "Thanks for playing, goodbye!",
+      "intro": "You can choose which door you open. For example to open the red door say \"Open the red door\". Now say \"start playing\" to begin.",
+      "prompt": ""
+    },
+    "options": [
+      {
+        "sceneId": 1,
+        "utterances": [
+          "start playing"
+        ],
+        "type": "virtual"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "color": "default",
+    "isHidden": false,
+    "isEndScene": false,
+    "defaultOption": "-1",
+    "generateOptions": true,
+    "readPreviousOptions": false,
+    "card": {
+      "title": "Red Room",
+      "text": "You enter a red room",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "You enter a red room. There is a box here.",
+      "prompt": ""
+    },
+    "options": [
+      {
+        "sceneId": 4,
+        "utterances": [
+          "open the box",
+          "open box"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "color": "red",
+    "isHidden": false,
+    "isEndScene": true,
+    "defaultOption": "-1",
+    "generateOptions": true,
+    "readPreviousOptions": false,
+    "card": {
+      "title": "Empty box",
+      "text": "You open an empty box.",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "You open a empty box. It contains no treasure. Thanks for playing!",
+      "prompt": ""
+    },
+    "options": []
+  },
+  {
+    "id": 5,
+    "color": "default",
+    "isHidden": false,
+    "isEndScene": false,
+    "defaultOption": "-1",
+    "generateOptions": true,
+    "readPreviousOptions": false,
+    "card": {
+      "title": "Blue Room",
+      "text": "You enter a blue room.",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "You enter a blue room. There is a box here.",
+      "prompt": ""
+    },
+    "options": [
+      {
+        "sceneId": 8,
+        "utterances": [
+          "open the box",
+          "open box"
+        ]
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "color": "default",
+    "isHidden": true,
+    "isEndScene": false,
+    "defaultOption": "-1",
+    "generateOptions": true,
+    "readPreviousOptions": false,
+    "card": {
+      "title": "Hidden Room",
+      "text": "You enter a hidden room.",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "You enter a hidden room. There is a box here.",
+      "prompt": ""
+    },
+    "options": [
+      {
+        "sceneId": 8,
+        "utterances": [
+          "open the box",
+          "open box"
+        ],
+        "type": "virtual"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "color": "default",
+    "isHidden": false,
+    "isEndScene": false,
+    "defaultOption": "-1",
+    "generateOptions": true,
+    "readPreviousOptions": true,
+    "card": {
+      "title": "Look Around",
+      "text": "You look at the doors.",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "You can see a red door, a green door and a blue door. You also spot a hidden door. They are all unlocked, and look like you can open them.",
+      "prompt": ""
+    },
+    "options": []
+  },
+  {
+    "id": 8,
+    "color": "green",
+    "isHidden": false,
+    "isEndScene": true,
+    "defaultOption": "-1",
+    "generateOptions": true,
+    "readPreviousOptions": false,
+    "card": {
+      "title": "Treasure box",
+      "text": "You open the box. It contains treasure. You have won! Thanks for playing.",
+      "prompt": "",
+      "image": {
+        "largeImageUrl": null,
+        "smallImageUrl": null
+      }
+    },
+    "voice": {
+      "intro": "You enter a room. What would you like to do?",
       "prompt": ""
     },
     "options": []
