@@ -2,8 +2,8 @@
   "applicationId": null,
   "awsProfileName": "",
   "skillName": "My Alexa Skill",
-  "lambdaName": "twm-interactive-adventure-test",
-  "dynamoTableName": "twm-interactive-adventure-test",
+  "lambdaName": "MyAlexaSkillLambdaFunction",
+  "dynamoTableName": "MyAlexaSkillTable",
   "dynamoRegion": "us-east-1",
   "commands": {
     "ResetStateIntent": [
@@ -23,8 +23,8 @@
       "repeat scene",
       "repeat"
     ],
-    "GoBackIntent": [
-      "go back"
+    "PreviousSceneIntent": [
+      "previous scene"
     ],
     "AMAZON.HelpIntent": [
       "help"
@@ -34,7 +34,7 @@
       "goodbye"
     ],
     "AMAZON.CancelIntent": [
-      "exit story"
+      "cancel story"
     ]
   },
   "responses": {

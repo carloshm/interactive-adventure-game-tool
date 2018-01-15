@@ -16,7 +16,7 @@
       "intent": "RepeatSceneIntent"
     },
     {
-      "intent": "GoBackIntent"
+      "intent": "PreviousSceneIntent"
     },
     {
       "intent": "AMAZON.HelpIntent"
@@ -28,46 +28,31 @@
       "intent": "AMAZON.CancelIntent"
     },
     {
-      "intent": "YesIntent"
+      "intent": "PositiveIntent"
     },
     {
-      "intent": "PeterIntent"
+      "intent": "NegativeIntent"
     },
     {
-      "intent": "FlopsyIntent"
+      "intent": "OpenTheRedDoorIntent"
     },
     {
-      "intent": "LettucesIntent"
+      "intent": "OpenTheGreenDoorIntent"
     },
     {
-      "intent": "RadishesIntent"
+      "intent": "OpenTheHiddenDoorIntent"
     },
     {
-      "intent": "CabbagesIntent"
+      "intent": "LookAroundIntent"
     },
     {
-      "intent": "NoIntent"
+      "intent": "EnterCorridorIntent"
     },
     {
-      "intent": "HideIntent"
+      "intent": "OpenTheBoxIntent"
     },
     {
-      "intent": "RunIntent"
-    },
-    {
-      "intent": "CryForHelpIntent"
-    },
-    {
-      "intent": "WriggleFreeIntent"
-    },
-    {
-      "intent": "DoorIntent"
-    },
-    {
-      "intent": "GardenIntent"
-    },
-    {
-      "intent": "ToolShedIntent"
+      "intent": "GoBackIntent"
     }
   ]
 }

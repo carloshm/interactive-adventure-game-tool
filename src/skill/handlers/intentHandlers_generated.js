@@ -13,8 +13,8 @@ module.exports = {
 	"RepeatSceneIntent": function ( intent, session, request, response ) {
 		processUtterance( intent, session, request, response, "repeat scene" )
 	},
-	"GoBackIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "go back" )
+	"PreviousSceneIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "previous scene" )
 	},
 	"AMAZON.HelpIntent": function ( intent, session, request, response ) {
 		processUtterance( intent, session, request, response, "help" )
@@ -23,48 +23,33 @@ module.exports = {
 		processUtterance( intent, session, request, response, "exit story" )
 	},
 	"AMAZON.CancelIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "exit story" )
+		processUtterance( intent, session, request, response, "cancel story" )
 	},
-	"YesIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "yes" )
+	"PositiveIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "positive" )
 	},
-	"PeterIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "peter" )
+	"NegativeIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "negative" )
 	},
-	"FlopsyIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "flopsy" )
+	"OpenTheRedDoorIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "open the red door" )
 	},
-	"LettucesIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "lettuces" )
+	"OpenTheGreenDoorIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "open the green door" )
 	},
-	"RadishesIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "radishes" )
+	"OpenTheHiddenDoorIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "open the hidden door" )
 	},
-	"CabbagesIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "cabbages" )
+	"LookAroundIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "look around" )
 	},
-	"NoIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "no" )
+	"EnterCorridorIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "enter corridor" )
 	},
-	"HideIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "hide" )
+	"OpenTheBoxIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "open the box" )
 	},
-	"RunIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "run" )
-	},
-	"CryForHelpIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "cry for help" )
-	},
-	"WriggleFreeIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "wriggle free" )
-	},
-	"DoorIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "door" )
-	},
-	"GardenIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "garden" )
-	},
-	"ToolShedIntent": function ( intent, session, request, response ) {
-		processUtterance( intent, session, request, response, "tool shed" )
+	"GoBackIntent": function ( intent, session, request, response ) {
+		processUtterance( intent, session, request, response, "go back" )
 	},
 }
